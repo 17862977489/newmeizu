@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>魅族官网-魅族智能手机官方网站</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css">
+	</head>
+	<body>
+		<!--banner-->
+		<div id="banner">
+			<div class="banner_con">
+				<div id="banner_yd">
+					<a href="#">
+						<img src="images/banner1.jpg" alt="" />
+					</a>
+					<a href="#">
+						<img src="images/banner2.jpg" alt=""/>
+					</a>
+					<a href="#">
+						<img src="images/banner3.jpg" alt="" />
+					</a>
+					<a href="#">
+						<img src="images/banner4.jpg" alt=""/>
+					</a>
+					<a href="#">
+						<img src="images/banner5.jpg" alt="" />
+					</a>
+					<a href="#">
+						<img src="images/banner1.jpg" alt="" />
+					</a>
+				</div>
+				<div class="pagination">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div id="banner_nav">
+					<h1 id="logo">
+						<a href="#">
+							<img src="images/logo.png" alt="" />
+						</a>
+					</h1>
+					<ul id="nav">
+						<li><a href="#">魅族商城</a></li>
+						<li><a href="#">魅族手机</a></li>
+						<li><a href="#">魅蓝手机</a></li>
+						<li><a href="#">魅族声学</a></li>
+						<li><a href="#">智能·配件</a></li>
+						<li><a href="#">服务</a></li>
+						<li><a href="#">专卖店</a></li>
+						<li><a href="#">Flyme</a></li>
+						<li><a href="#">社区</a></li>
+					</ul>
+					<div id="denglu">
+						<a href="#">
+							<img src="images/icon-user_90e5951.png" alt="" />
+						</a>
+					</div>
+					<div id="shopcar">
+						<a href="#">
+							<i class="iconfont icon-gouwuche"></i>
+							<em>0</em>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--con1-->
+		<div id="con1">
+			<div class="con1_con">
+				<div id="con1_zjj">
+					<img src="images/zjj.jpg" alt="" />
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="js/sport5.js"></script>
+<script>
+	var pa=document.getElementsByClassName("pagination")[0];
+	var sp=pa.getElementsByTagName("span");
+	var byd=document.getElementById("banner_yd");
+	var time=null;
+	var index=0;
+	sp[0].className="visible";
+	timer = setInterval(autoPlay,7000);
+	function autoPlay(){
+		index++;
+ 		startMove( byd , { "left" : -index*1920-339 },function(){
+ 			if( index == 5 ||byd.offsetLeft<=-9939){
+ 				byd.style.left = "-339px";
+ 				index = 0;
+ 			}
+ 		} );
+ 		for( var i = 0 ; i < sp.length ; i++ ){
+ 			sp[i].className = "";
+ 		}
+ 		//如果最后一张图进入可视区  让下标为0的文字高亮显示的
+ 		if(index>=5){
+ 			index=0;
+ 		}
+ 		sp[index].className = "visible";
+ 	}
+</script>
