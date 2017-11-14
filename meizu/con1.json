@@ -1,3 +1,14 @@
 {
-	
+	"con1" : [
+		{
+			"name" : "魅蓝 Note6",
+			"src" : "mlnote6.jpg",
+			"info" : "高通八核CPU 疾速双摄"
+		},
+		{
+			"name" : "魅蓝 6",
+			"src" : "ml6.jpg",
+			"info" : "AI加速 运行速度提升15%"
+		}
+	]
 }

@@ -50,11 +50,7 @@ html,body {
 	zoom: 1;
 }
 
-html {
-	background: #000;
-}
-
-.banner_con,.con1_con {
+.banner_con,.con1_con,.classify_con,.static_phone_con,.find_phone_con,.product_con,.service_con,.tb_con{
 	width: 1242px;
 	margin: 0 auto;
 }
@@ -214,10 +210,343 @@ html {
 
 /*con1*/
 #con1{
-	height: 376px;
+	min-height: 376px;
+	_height:376px;
+}
+#con1 .con1_con{
+	min-height: 376px;
+	_height:376px;
+}
+.pt{
+	min-height: 300px;
+	_height:300px;
+	padding-top: 76px;
+}
+.pt_wrapper{
+	min-height: 300px;
+	_height:300px;
+}
+.pt_wrapper div{
+	width: 170px;
+	height: 300px;
+	margin-right: 185px;
+	float: left;
+	text-align: center;
+}
+.pt_wrapper img{
+	margin-left: 5px;
+}
+.pt_wrapper h4{
+	margin-top: -6px;
+	margin-bottom: 8px;
+	font-size: 20px;
+    font-weight: 700;
+    color:#515151;
+}
+.pt_wrapper span{
+	color:#999;
+	font-size: 14px;
+}
+.pt_wrapper .con1_con4{
+	margin-right: 0;
+}
+
+/*分类*/
+#classify{
+	height: 383px;
+	background: #f4f4f4;
+}
+.classify_con{
+	height: 383px;
+}
+.classify_left{
+	position: relative;
+	width: 620px;
+	height: 383px;
+	float: left;
+}
+.classify_left a{
+	display: block;
+	width: 620px;
+	height: 383px;
+}
+.classify_left img{
+	position: absolute;
+	width: 620px;
+	height: 410px;
+	bottom:1px;
+}
+.classify_right{
+	width: 620px;
+	height: 360px;
+	float: left;
+}
+.classify_right ul{
+	padding-top: 90px;
+	width: 620px;
+	height: 270px;
+}
+.classify_right ul li{
+	float: left;
+	width: 155px;
+	height: 135px;
+}
+.classify_right ul li a{
+	display: block;
+	margin: 0 auto;
+	width: 80px;
+	height: 81px;
+	text-align: center;
+}
+.classify_right ul li a img{
+	margin: 0 15px 10px;
+}
+.classify_right ul li a span{
+	color:#515151;
+}
+
+/*static_phone*/
+#static_phone{
+	min-height: 637px;
+	_height:637px;
+}
+.static_phone_con{
+	padding-top: 104px;
+	height: 533px;
+}
+.static_phone_con ul{
+	min-height:533px;
+	_height:533px;
+}
+.static_phone_con ul li{
+	float: left;
+	height: 533px;
+	text-align: center;
+}
+.static_phone_con ul li a{
+	display: block;
+	position: relative;
+	width: 234px;
+	height: 533px;
+	float: left;
+	margin-right: 100px;
+}
+.static_phone_con ul li #mr0{
+	margin-right: 0;
+}
+.static_phone_con ul li a .phone_img{
+	position: relative;
+	width: 208px;
+    height: 435px;
+    margin: 0 auto;
+}
+.static_phone_con ul li a img{
+	position: absolute;
+	display: block;
+	left:0;
+	bottom:0;
+}
+.static_phone_con ul li a .phone_info{
+	line-height: 20px;
+    color: #666;
+    font-size: 14px;
+    padding-top: 28px;
+}
+.static_phone_con ul li a .phone_info span{
+	display: block;
+	margin-bottom: 4px;
+}
+.static_phone_con ul li a .phone_info em{
+	display: block;
+	color:#f0415f;
+	padding-top: 2px;
+	text-indent: -5px;
+}
+
+/*find_phone*/
+#find_phone{
+	min-height: 423px;
+	_height:423px;
+	padding-top: 65px;
+	padding-bottom: 50px;
+}
+.find_phone_con{
+	min-height: 423px;
+	_height:423px;
+	background: skyblue;
+}
+.find_phone_con_top{
+	height: 360px;
+	background: pink;
+}
+.find_phone_con_top .phone_info{
+	text-align: center;
+}
+.find_phone_con_top .phone_info div{
+	position: relative;
+	height: 260px;
+    width: 200px;
+    margin: 0 auto;
+}
+.find_phone_con_top a{
+	display: block;
+	position: relative;
+    float: left;
+    margin-right: 100px;
+    width: 234px;
+    color:#515151;
+}
+.find_phone_con_top a img{
+	display: block;
+    height: 260px;
+    width: 280px;
+    position: absolute;
+    top: -6px;
+    margin-left: -140px;
+    left: 50%;
+}
+.find_phone_con_top a span{
+	display: block;
+	margin-bottom: 4px;
+}
+.find_phone_con_top .mr0{
+	margin-right: 0;
+}
+.find_phone_con_top em{
+	display: block;
+	color:#f0415f;
+	padding-top: 2px;
+	text-indent: -5px;
+}
+.find_phone_con_bottom{
+	margin-top: 42px;
+	height: 21px;
+    text-align: center;
+}
+.find_phone_con_bottom span{
+	display: inline-block;
+	background: #d9d9d9;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+.find_phone_con_bottom .show{
+	background: #333;
+}
+/*product*/
+#product{
+	min-height: 1280px;
+	_height:1280px;
+	border-top:1px solid #eee ;	
+}
+.product_con{
+	min-height: 1176px;
+	_height:1176px;
+	padding-top: 104px;
+}
+.product_con ul{
+	height: 1176px;
 	background: #ccc;
 }
-#con1 #con1_zjj{
-	width: 160px;
-	height: 160px;
+.product_con ul li{
+	text-align: center;
+    float: left;
+    margin-bottom: 80px;
+}
+.product_con ul li a{
+	position: relative;
+    float: left;
+    margin-right: 100px;
+    width: 234px;
+    color:#515151;
+}
+.product_con ul li a img{
+	display: block;
+	width: 208px;
+    border-radius: 5px;
+    transition: opacity .3s .1s;
+}
+.product_con ul li a .zm{
+	position: relative;
+	left: 12px;
+}
+.product_con ul li a .bm{
+	position: absolute;
+    left: 12px;
+    top: 0;
+    opacity: 0;
+}
+.product_con ul li a .phone_info{
+	line-height: 20px;
+    color: #666;
+    font-size: 14px;
+    padding-top: 28px;
+}
+.product_con ul li a .phone_info span{
+	display: block;
+	margin-bottom: 4px;
+}
+.product_con ul li a .phone_info em{
+    display: block;
+    padding-top: 2px;
+    color: #f0415f;
+    text-indent: -5px; 
+}
+/*service*/
+#service{
+	height: 280px;
+	background: #ededed;
+}
+.service_con{
+	height: 280px;
+	background: #ededed;
+}
+.service_con div{
+	float: left;
+    width: 33.3%;
+    height: 280px;
+    overflow: hidden;
+}
+.service_con div a{
+	position: relative;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.service_con div a img{
+	position: absolute;
+	top: 0;
+    left: 50%;
+    width: 640px;
+    margin-left: -320px;
+}
+
+/*tb*/
+#tb{
+	height: 220px;
+}
+.tb_con{
+	height: 87px;
+	padding: 66px 0;
+}
+.tb_con ul{
+	height: 87px;
+}
+.tb_con ul li{
+	float: left;
+	width: 60px;
+	height: 87px;
+    margin-right: 135px;
+}
+.tb_con ul li a{
+	color: #515151;
+	display: block;
+	text-align: center;
+}
+.tb_con ul li span{
+	font-size:14px;
+}
+.tb_con ul .mr0{
+	margin-right: 0;
 }
