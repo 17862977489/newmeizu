@@ -1,0 +1,116 @@
+{
+	"statics" : {
+		"list":[
+			{
+				"name" : "魅蓝 6",
+				"src1" : "ml6bm.png",
+				"src2" : "ml6zm.png",
+				"info" : "AI加速  运行速度提升15%",
+				"price" :"699"
+			},
+			{
+				"name" : "魅族 PRO 7",
+				"src1" : "mzpro7bm.png",
+				"src2" : "mzpro7zm.png",
+				"info" : "最高直降481元 享12期免息",
+				"price" :"2499"
+			},
+			{
+				"name" : "魅族 PRO 7 Plus",
+				"src1" : "mzpro7plusbm.png",
+				"src2" : "mzpro7pluszm.png",
+				"info" : "直降281元 享12期免息",
+				"price" :"3299"
+			},
+			{
+				"name" : "魅蓝 Note6",
+				"src1" : "mlnote6bm.png",
+				"src2" : "mlnote6zm.png",
+				"info" : "高通八核CPU 疾速双摄",
+				"price" :"1099"
+			}
+		]
+	},
+	"find" : {
+		"list" : [
+			[
+				{
+					"name" : "魅蓝 E",
+					"src" : "mle.png",
+					"info" : "购机直降200元",
+					"price" :"799"
+				},
+				{
+					"name" : "魅蓝 E2",
+					"src" : "mle2.png",
+					"info" : "32G直降300元",
+					"price" :"999"
+				},
+				{
+					"name" : "魅蓝 Note5",
+					"src" : "mlnote5.png",
+					"info" : "领券立减100元",
+					"price" :"899"
+				},
+				{
+					"name" : "魅蓝 X",
+					"src" : "mlx.jpg",
+					"info" : "性能强劲 顺丰包邮",
+					"price" :"1199"
+				}
+			],
+			[
+				{
+					"name" : "魅蓝 Note6",
+					"src" : "mlnote6 (2).jpg",
+					"info" : "疾速性能 疾速双摄",
+					"price" :"1099"
+				},
+				{
+					"name" : "魅族 MX6",
+					"src" : "mzmx6.png",
+					"info" : "购机享3期免息",
+					"price" :"1599"
+				},
+				{
+					"name" : "魅族 PRO 6s",
+					"src" : "mzpro6s.png",
+					"info" : "高颜值手机，购机享3期免息",
+					"price" :"2299"
+				},
+				{
+					"name" : "魅族 PRO 7",
+					"src" : "mzpro7.jpg",
+					"info" : "直降481元起，购机享12期免息",
+					"price" :"2899"
+				}
+			],
+			[
+				{
+					"name" : "魅蓝 5",
+					"src" : "ml5.jpg",
+					"info" : "高清屏大电池 长续航",
+					"price" :"699"
+				},
+				{
+					"name" : "魅蓝 5s",
+					"src" : "ml5s.jpg",
+					"info" : "礼盒版领券立减100元",
+					"price" :"999"
+				},
+				{
+					"name" : "魅蓝 A5",
+					"src" : "mla5.png",
+					"info" : "领券减100元",
+					"price" :"699"
+				},
+				{
+					"name" : "魅族 PRO 6Plus",
+					"src" : "pro6plus.png",
+					"info" : "强大内芯，购机享3期免息",
+					"price" :"2699"
+				}
+			]
+		]
+	}
+}

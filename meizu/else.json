@@ -1,0 +1,139 @@
+{
+	"con1" : [
+		{
+			"name" : "赚奖金",
+			"src" : "zjj.jpg",
+			"info" : "魅友福利大放送"
+		},
+		{
+			"name" : "魅蓝 Note6",
+			"src" : "mlnote6.jpg",
+			"info" : "高通八核CPU 疾速双摄"
+		},
+		{
+			"name" : "魅蓝 6",
+			"src" : "ml6.jpg",
+			"info" : "AI加速 运行速度提升15%"
+		}
+	],
+	"product":[
+		{
+			"name" : "魅蓝双向移动电源",
+			"src1" : "pro1.png",
+			"src2" : "pro1.jpg",
+			"info" : "新品上市 火热抢购",
+			"price": "169"
+		},
+		{
+			"name" : "魅族移动电源",
+			"src1" : "pro2.png",
+			"src2" : "pro2.jpg",
+			"info" : "萌宝新品 火热抢购",
+			"price": "199"
+		},
+		{
+			"name" : "魅族 Flow 三单元耳机",
+			"src1" : "pro3.png",
+			"src2" : "pro3.jpg",
+			"info" : "用的惬意 听得尽兴",
+			"price": "599"
+		},
+		{
+			"name" : "魅族 EP51蓝牙运动耳机",
+			"src1" : "pro4.png",
+			"src2" : "pro4.jpg",
+			"info" : "丛林绿/云雾蓝新品开售",
+			"price": "229"
+		},
+		{
+			"name" : "魅族 EP2X耳机",
+			"src1" : "pro5.png",
+			"src2" : "pro5.jpg",
+			"info" : "契合声音的流动之美",
+			"price": "129"
+		},
+		{
+			"name" : "魅族智能体脂秤",
+			"src1" : "pro6.png",
+			"src2" : "pro6.jpg",
+			"info" : "精准的数字 才是真实的你",
+			"price": "169"
+		},
+		{
+			"name" : "魅蓝EP52蓝牙耳机",
+			"src1" : "pro7.png",
+			"src2" : "pro7.jpg",
+			"info" : "新品到货 限量抢购",
+			"price": "299"
+		},
+		{
+			"name" : "魅族HD50 头戴式耳机",
+			"src1" : "pro8.png",
+			"src2" : "pro8.jpg",
+			"info" : "清新简洁，有音质更有颜值",
+			"price": "399"
+		},
+		{
+			"name" : "魅族手环",
+			"src1" : "pro9.png",
+			"src2" : "pro9.jpg",
+			"info" : "腕间流动的心率专家",
+			"price": "229"
+		},
+		{
+			"name" : "魅族蓝牙小音箱",
+			"src1" : "pro10.png",
+			"src2" : "pro10.jpg",
+			"info" : "好音感 直达心灵",
+			"price": "169"
+		},
+		{
+			"name" : "魅蓝旅行包",
+			"src1" : "pro11.png",
+			"src2" : "pro11.jpg",
+			"info" : "青春正好 即刻出发",
+			"price": "269"
+		},
+		{
+			"name" : "魅蓝 休闲旅行双肩包",
+			"src1" : "pro12.png",
+			"src2" : "pro12.jpg",
+			"info" : "曲面一体式 多功能隔层",
+			"price": "199"
+		}
+	],
+	"bbs":[
+		{
+			"name" : "Dimiphantom",
+			"src" : "bbs1-img.jpg",
+			"head" : "bbs1.jpg",
+			"title" : "海外媒体眼中的 PRO 7",
+			"watch": "58752",
+			"comment":"1894"
+		},
+		{
+			"name" : "笔戈科技",
+			"src" : "bbs2-img.jpg",
+			"head" : "bbs2.jpg",
+			"title" : "PRO 7 延时摄影丨看尽西藏之美",
+			"watch": "32365",
+			"comment":"1038"
+		},
+		{
+			"name" : "王员外可爱多",
+			"src" : "bbs3-img.jpg",
+			"head" : "bbs3.jpg",
+			"title" : "PRO 7双摄成像的秘密",
+			"watch": "45119",
+			"comment":"2813"
+		},
+		{
+			"name" : "Dimiphantom",
+			"src" : "bbs4-img.jpg",
+			"head" : "bbs4.jpg",
+			"title" : "魅族 Flow 耳机最昂贵的配件",
+			"watch": "61279",
+			"comment":"1598"
+		}
+	]
+}

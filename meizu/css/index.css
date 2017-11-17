@@ -50,7 +50,7 @@ html,body {
 	zoom: 1;
 }
 
-.banner_con,.con1_con,.classify_con,.static_phone_con,.find_phone_con,.product_con,.service_con,.tb_con{
+.banner_con,.con1_con,.classify_con,.static_phone_con,.find_phone_con,.product_con,.service_con,.tb_con,.community_con,.bottom_con{
 	width: 1242px;
 	margin: 0 auto;
 }
@@ -79,11 +79,129 @@ html,body {
 	display: block;
 	float: left;
 }
-
+.banner_con .tit{
+	height: 82px;
+	background: rgba(255,255,255,0);
+	position: absolute;
+	width: 1920px;
+	left:-339px;
+	top:0;
+	z-index:1;
+}
+.banner_con #nav .morepro{
+	position: absolute;
+	width: 1920px;
+	height: 0;
+	top:13px;
+	left:-739px;
+	background: #fff;
+	display: none;
+	
+}
+.banner_con #nav .morepro .ul1{
+	position: absolute;
+	top:30px;
+	left:709px;
+}
+.banner_con #nav .morepro .ul2{
+	position: absolute;
+	top:30px;
+	left:509px;
+}
+.banner_con #nav .morepro .ul3{
+	position: absolute;
+	top:30px;
+	left:509px;
+}
+.banner_con #nav .morepro ul{
+	display: none;
+}
+.banner_con #nav .morepro ul div{
+	float: left;
+}
+.banner_con #nav .morepro ul div a{
+	font-size: 12px;
+	width: 120px;
+    height: 120px;
+    color: #666;
+    white-space: nowrap;
+    display: block;
+    padding: 0 7px 11px;
+    cursor: pointer;
+    position: relative;
+    z-index: 99;
+}
+.banner_con #nav .morepro .ul2 div a{
+	width: 80px;
+}
+.banner_con #nav .morepro .ul3 div a{
+	width: 80px;
+}
+.banner_con #nav .morepro ul div a img{
+    display: block;
+    height: 70px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.banner_con #nav .morepro .ul1 div:nth-of-type(2) a img{
+	margin-left: 15px;
+}
+.banner_con #nav .morepro .ul1 div:nth-of-type(3) a span{
+	margin-left: 5px;
+}
+.banner_con #nav .morepro ul div:nth-of-type(1) a span{
+	margin-left: 8px;
+}
+.banner_con #nav .morepro .ul2 div:nth-of-type(2) a span{
+	margin-left: 18px;
+}
+.banner_con #nav .morepro .ul2 div:nth-of-type(3) a span{
+	margin-left: 12px;
+}
+.banner_con #nav .morepro .ul2 div:nth-of-type(4) a span{
+	margin-left: 18px;
+}
+.banner_con #nav .morepro .ul2 div:nth-of-type(5) a span{
+	margin-left: 12px;
+}
+.banner_con #nav .morepro .ul2 div:nth-of-type(6) a span{
+	margin-left: 5px;
+}
+.banner_con #nav .morepro .ul2 div:nth-of-type(7) a span{
+	margin-left: 10px;
+}
+.banner_con #nav .morepro .ul2 div:nth-of-type(8) a span{
+	margin-left: 15px;
+}
+.banner_con #nav .morepro .ul3 div:nth-of-type(1) a span{
+	margin-left: -2px;
+}
+.banner_con #nav .morepro .ul3 div:nth-of-type(2) a span{
+	margin-left: 8px;
+}
+.banner_con #nav .morepro .ul3 div:nth-of-type(3) a span{
+	margin-left: -8px;
+}
+.banner_con #nav .morepro .ul3 div:nth-of-type(4) a span{
+	margin-left: 8px;
+}
+.banner_con #nav .morepro .ul3 div:nth-of-type(5) a span{
+	margin-left: -4px;
+}
+.banner_con #nav .morepro .ul3 div:nth-of-type(6) a{
+	margin-left: 60px;
+}
+.banner_con #nav .morepro .ul3 div:nth-of-type(7) a span{
+	margin-left: -8px;
+}
+.banner_con #nav .morepro .ul3 div:nth-of-type(8) a span{
+	margin-left: 20px;
+}
 .banner_con #banner_nav {
 	width: 1242px;
 	height: 82px;
 	position: absolute;
+	left:339px;
 }
 
 .banner_con #logo {
@@ -92,13 +210,14 @@ html,body {
 	height: 20px;
 	position: absolute;
 	left: 2px;
-	top: 29px
+	top: 29px;
+	z-index: 99;
 }
 
-.banner_con #logo a img {
+.banner_con #logo a i{
 	display: block;
-	width: 100%;
-	height: 100%;
+	color:#fff;
+	font-size:20px;
 	z-index: 20;
 }
 
@@ -175,6 +294,7 @@ html,body {
 	border-radius: 50%;
 	border: 1px solid #fff;
 	background: #fff;
+	cursor:pointer;
 }
 
 .pagination span:nth-of-type(1) {
@@ -222,32 +342,32 @@ html,body {
 	_height:300px;
 	padding-top: 76px;
 }
-.pt_wrapper{
+#ptwrapper{
 	min-height: 300px;
 	_height:300px;
 }
-.pt_wrapper div{
+#ptwrapper div{
 	width: 170px;
 	height: 300px;
 	margin-right: 185px;
 	float: left;
 	text-align: center;
 }
-.pt_wrapper img{
+#ptwrapper img{
 	margin-left: 5px;
 }
-.pt_wrapper h4{
+#ptwrapper h4{
 	margin-top: -6px;
 	margin-bottom: 8px;
 	font-size: 20px;
     font-weight: 700;
     color:#515151;
 }
-.pt_wrapper span{
+#ptwrapper span{
 	color:#999;
 	font-size: 14px;
 }
-.pt_wrapper .con1_con4{
+#ptwrapper .con1_con4{
 	margin-right: 0;
 }
 
@@ -331,7 +451,7 @@ html,body {
 	float: left;
 	margin-right: 100px;
 }
-.static_phone_con ul li #mr0{
+.static_phone_con ul li .mr0{
 	margin-right: 0;
 }
 .static_phone_con ul li a .phone_img{
@@ -373,14 +493,23 @@ html,body {
 .find_phone_con{
 	min-height: 423px;
 	_height:423px;
-	background: skyblue;
+	position: relative;
 }
 .find_phone_con_top{
 	height: 360px;
-	background: pink;
+	position: relative;
+	overflow: hidden;
+}
+.find_phone_con_top .find_top_con{
+	width: 3726px;
+	left:0;
+	position: absolute;
 }
 .find_phone_con_top .phone_info{
 	text-align: center;
+}
+.find_phone_con_top .top1,.find_phone_con_top .top2,.find_phone_con_top .top3{
+	float: left;
 }
 .find_phone_con_top .phone_info div{
 	position: relative;
@@ -418,6 +547,34 @@ html,body {
 	padding-top: 2px;
 	text-indent: -5px;
 }
+.find_phone_btnL{
+	position: absolute;
+	left:0;
+	top:100px;
+	width: 50px;
+	height: 50px;
+	background: rgba(0,0,0,0.5);
+	border-radius: 50%;
+	display: none;
+	z-index:1;
+}
+.find_phone_btnL img,.find_phone_btnR img{
+	width: 100%;
+	height: 100%;
+	display: block;
+	cursor: pointer;
+}
+.find_phone_btnR{
+	position: absolute;
+	right:0;
+	top:100px;
+	width: 50px;
+	height: 50px;
+	background: rgba(0,0,0,0.5);
+	border-radius: 50%;
+	display: none;
+	z-index:1;
+}
 .find_phone_con_bottom{
 	margin-top: 42px;
 	height: 21px;
@@ -446,8 +603,8 @@ html,body {
 	padding-top: 104px;
 }
 .product_con ul{
-	height: 1176px;
-	background: #ccc;
+	min-height: 1176px;
+	_height:1176px;
 }
 .product_con ul li{
 	text-align: center;
@@ -461,11 +618,13 @@ html,body {
     width: 234px;
     color:#515151;
 }
+.product_conUl #mr0{
+	margin-right: 0;
+}
 .product_con ul li a img{
 	display: block;
 	width: 208px;
     border-radius: 5px;
-    transition: opacity .3s .1s;
 }
 .product_con ul li a .zm{
 	position: relative;
@@ -549,4 +708,224 @@ html,body {
 }
 .tb_con ul .mr0{
 	margin-right: 0;
+}
+
+/*community*/
+#community{
+	height: 580px;
+	background: #f4f4f4;
+}
+.community_con{
+	padding-top: 80px;
+	height: 500px;
+}
+.community_con h2{
+	height: 36px;
+	line-height: 36px;
+	color: #333;
+    font-size: 36px;
+    text-align: center;
+}
+.community_con p{
+	color: #999;
+    font-size: 18px;
+    padding-top: 20px;
+    text-align: center;
+    margin-bottom: 54px;
+}
+.community_con p a{
+    display: inline;
+    color: #00c3f5;
+    margin-left: 12px;
+}
+.community_con ul li{
+	width: 25%;
+	height: 311px;
+	float: left;
+}
+.community_con ul li a{
+	display: block;
+	width: 292px;
+	height: 311px;
+	margin:0 10px;
+	position: relative;
+}
+.community_con ul li .mr0{
+	margin-right: 0;
+}
+.community_con ul li a .info{
+	position: absolute;
+	height: 70px;
+	bottom:26px;
+	color: #fff;
+}
+.community_con ul li a .info img{
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	float: left;
+	margin-left: 20px;
+	margin-right: 12px;
+}
+.community_con ul li a .info em{
+    display: inline-block;
+    font-size: 14px;
+    width: 220px;
+}
+.community_con ul li a .info .sz{
+	display: inline-block;
+	font-size:12px;
+	height: 12px;
+	line-height: 12px;
+	margin-left: 2px;
+}
+.community_con ul li a .info .tit{
+	font-size:16px;
+	float: left;
+	height: 16px;
+	line-height: 16px;
+	margin-top: 13px;
+	margin-left: 19px;
+}
+.community_con ul li a .info .icon-dazhongicon04{
+	margin-left: 20px;
+}
+
+/*bottom*/
+#bottom{
+	height: 295px;
+}
+.bottom_con{
+	height: 295px;
+}
+.bottom_con .bottom_top{
+	height: 192px;
+	margin-left: 4px;
+	border-bottom: 1px solid #eee;
+}
+.bottom_con .bottom_top ul{
+	float: left;
+    width: 960px;
+    margin-bottom:16px;
+    padding-top: 60px;
+}
+.bottom_con .bottom_top ul li{
+	float: left;
+    width: 240px;
+    margin-bottom: 27px;
+    line-height: 30px;
+}
+.bottom_con .bottom_top ul li a{
+	color: #999;
+}
+.bottom_top ul li a i{
+	color: #999;
+    vertical-align: middle;
+    font-size: 24px;
+}
+.bottom_top ul li a span{
+	vertical-align: middle;
+    font-size: 14px;
+}
+.bottom_top .bottom_topR{
+	float: right;
+    margin-top: 65px;
+    text-align: right;
+}
+.bottom_top .bottom_topR .desc{
+	font-size: 12px;
+    margin-bottom: 2px;
+    color:#999;
+}
+.bottom_top .bottom_topR .tel{
+	display: block;
+    font-size: 20px;
+    color: #00c3f5;
+    margin-bottom: 8px;
+}
+.bottom_top .bottom_topR .online{
+    display: inline-block;
+    vertical-align: middle;
+    width: 144px;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 3px;
+    background-color: #00c3f5;
+    line-height: 36px;
+    text-align: center;
+}
+.bottom_top .bottom_topR .online i{
+    vertical-align: middle;
+    font-size: 28px;
+}
+.bottom_top .bottom_topR .online span{
+	display: inline-block;
+    vertical-align: middle;
+    padding-right: 6px;
+}
+.bottom_bottom ul{
+	margin: 26px 0 18px;
+	height: 16px;
+}
+.bottom_bottom ul li{
+    float: left;
+    border-right: 1px solid #efefef;
+}
+.bottom_bottom ul li a{
+	color: #999;
+    font-size: 12px;
+    padding: 0 15px;
+    line-height: 12px;
+}
+.bottom_bottom ul li .pl0{
+	padding-left: 0;
+}
+.bottom_bottom .bq{
+	font-size: 12px;
+	color:#999;
+}
+.bottom_bottom .bq a{
+	color:#999;
+}
+.bottom_bottom .bq img{
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: -4px;
+	margin-left: 5px;
+}
+.icon-guoqi{
+	color:#ed5565;
+	background: #f6ba41;
+	border-radius: 50%;
+}
+.bottom_bottomL{
+	float: left;
+}
+#bottom_bottomR{
+	float: right;
+	padding-top: 52px;
+	margin: 0;
+	position: relative;
+}
+#bottom_bottomR i{
+	font-size:23px;
+}
+#bottom_bottomR #br0{
+	border-right: 0;
+}
+#bottom_bottomR li a{
+	padding: 0 13px;
+}
+#bottom_bottomR #br0 a{
+	padding-right:0;
+}
+#bottom_bottomR #br0 i{
+	font-size:26px;
+}
+#bottom_bottomR div{
+	position: absolute;
+	bottom:28px;
+	left:-10px;
+	display: none;
 }

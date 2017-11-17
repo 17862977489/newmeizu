@@ -1,44 +1,53 @@
-//obj-- 操作的元素    json {}  操作的target  和  attr    （多物体运动+缓冲+透明度+链式运动）
-//callback  回调函数  
+// 对象:{  }
+//obj ： 操作的对象 
+//callback :回调函数  回头再调用  
 function startMove(obj,json,callback){
-	clearInterval(obj.timer);
+	clearInterval(obj.timer);//为每一个对象添加一个定时器属性 让每一个对象都有自己对应的定时
 	obj.timer = setInterval(function(){
-		var flag = true;//如果为真   让定时器停止  
+		var flag = true;//如果falg为true，停止定时器
+		//获取当前操作的元素在样式值  每启动一次定时器  该值就会发生变量
 		for( var attr in json ){
 			var current = 0;
+			//判断attr是否是opacity 如果是需要单独处理
 			if( attr == "opacity" ){
-				current = parseFloat( getStyle( obj,attr ) ) * 100 ;
+				//操作透明度
+				current = parseFloat( getStyle(obj,attr) )*100 ;
+				
 			}else{
-				current =parseInt( getStyle( obj, attr ) ) ;//每次调用定时器 获取操作的attr样式值
+				current = parseInt( getStyle(obj,attr) );
 			}
-			var speed = (json[attr] - current)/5;
-			speed = speed > 0 ? Math.ceil(speed) : Math.floor(speed);
-			//如果操作的样式 ！=  目标值不相等   不能停止定时器  变flag为false
-			if( current != json[attr] ){
-				flag = false;
-			}
+			var speed = (json[attr]- current)/5;
 			
+			speed = speed>0?Math.ceil(speed) : Math.floor(speed);
+			
+			//如果某个样式的目标值 ！= 当前设置的样式值 就关闭开关
+			if( json[attr]  != current ){//动作结束
+				flag = false;
+			} 
+			
+			//样式改变
 			if( attr == "opacity" ){
-				obj.style.opacity = (current+speed)/100;
+				obj.style.opacity = (current + speed)/100;
 			}else{
 				obj.style[attr] = current + speed + "px";
 			}
 		}
-		//循环结束后  判断开关变量的值 是否是true  如果是true  就停止定时器
+		
+		//循环结束后 判断flag是否是true  如果是就停止定时器
 		if( flag ){
-			clearInterval( obj.timer );
-			//上一个动作完成  进入到下一个动作  
+			clearInterval(obj.timer);
+			//下一个动作可以是任意的
+			//调用回调函数
 			if( callback ){
-				callback();//下一个动作执行
+				callback();
 			}
 		}
 	},30)
-}
-function getStyle(obj,attr){
-	if( window.getComputedStyle ){
-		return window.getComputedStyle(obj,false)[attr];
-	}else{
-		return obj.currentStyle[attr];
-	}
-}
+} 
 
+
+function getStyle(obj,attr){
+	//注意返回的是字符串
+	return window.getComputedStyle ? window.getComputedStyle(obj,false)[attr] : obj.currentStyle[attr];
+}
+	
