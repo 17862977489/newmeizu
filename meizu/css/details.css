@@ -1,0 +1,477 @@
+@charset "UTF-8";
+html,body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img,span{
+	margin: 0;
+	padding: 0;
+}
+
+ul,ol,li {
+	list-style: none;
+}
+
+a,u {
+	text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-size: 16px;
+	font-weight: 100;
+}
+
+b,strong {
+	font-weight: 100;
+}
+
+i,em {
+	font-style: normal;
+}
+
+img {
+	border: 0;
+	display: block;
+}
+
+html,body {
+	height: 100%;
+}
+
+.clearfix:after {
+	content: ".";
+	clear: both;
+	height: 0;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+}
+
+.clearfix {
+	zoom: 1;
+}
+
+.header_con,.buy_con,.bottom_con{
+	width: 1240px;
+	margin: 0 auto;
+}
+/*header*/
+#header{
+	height: 80px;
+	border-bottom: 1px solid #efefef;
+}
+#header .header_con{
+	position: relative;
+}
+#header h1{
+	float: left;
+    height: 80px;
+    overflow: hidden;
+}
+#header .header_con h1 a{
+    position: relative;
+    display: block;
+    height: 80px;
+    width: 115px;
+    padding-top: 30px;
+}
+#header .header_con h1 a i{
+	color:#00c3f5;
+	position: absolute;
+	font-size:20px;
+}
+.header_con #nav .morepro{
+	position: absolute;
+	width: 1920px;
+	height: 0px;
+	top:13px;
+	left:-739px;
+	background: #333;
+	display: none;
+	
+}
+.header_con #nav .morepro .ul1{
+	position: absolute;
+	top:30px;
+	left:709px;
+}
+.header_con #nav .morepro .ul2{
+	position: absolute;
+	top:30px;
+	left:509px;
+}
+.header_con #nav .morepro .ul3{
+	position: absolute;
+	top:30px;
+	left:509px;
+}
+.header_con #nav .morepro ul{
+	display: none;
+}
+.header_con #nav .morepro ul div{
+	float: left;
+}
+.header_con #nav .morepro ul div a{
+	font-size: 12px;
+	width: 120px;
+    height: 120px;
+    color: #666;
+    white-space: nowrap;
+    display: block;
+    padding: 0 7px 11px;
+    cursor: pointer;
+    position: relative;
+    z-index: 99;
+}
+.header_con #nav .morepro .ul2 div a{
+	width: 80px;
+}
+.header_con #nav .morepro .ul3 div a{
+	width: 80px;
+}
+.header_con #nav .morepro ul div a img{
+    display: block;
+    height: 70px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.header_con #nav .morepro .ul1 div:nth-of-type(2) a img{
+	margin-left: 15px;
+}
+.header_con #nav .morepro .ul1 div:nth-of-type(3) a span{
+	margin-left: 5px;
+}
+.header_con #nav .morepro ul div:nth-of-type(1) a span{
+	margin-left: 8px;
+}
+.header_con #nav .morepro .ul2 div:nth-of-type(2) a span{
+	margin-left: 18px;
+}
+.header_con #nav .morepro .ul2 div:nth-of-type(3) a span{
+	margin-left: 12px;
+}
+.header_con #nav .morepro .ul2 div:nth-of-type(4) a span{
+	margin-left: 18px;
+}
+.header_con #nav .morepro .ul2 div:nth-of-type(5) a span{
+	margin-left: 12px;
+}
+.header_con #nav .morepro .ul2 div:nth-of-type(6) a span{
+	margin-left: 5px;
+}
+.header_con #nav .morepro .ul2 div:nth-of-type(7) a span{
+	margin-left: 10px;
+}
+.header_con #nav .morepro .ul2 div:nth-of-type(8) a span{
+	margin-left: 15px;
+}
+.header_con #nav .morepro .ul3 div:nth-of-type(1) a span{
+	margin-left: -2px;
+}
+.header_con #nav .morepro .ul3 div:nth-of-type(2) a span{
+	margin-left: 8px;
+}
+.header_con #nav .morepro .ul3 div:nth-of-type(3) a span{
+	margin-left: -8px;
+}
+.header_con #nav .morepro .ul3 div:nth-of-type(4) a span{
+	margin-left: 8px;
+}
+.header_con #nav .morepro .ul3 div:nth-of-type(5) a span{
+	margin-left: -4px;
+}
+.header_con #nav .morepro .ul3 div:nth-of-type(6) a{
+	margin-left: 60px;
+}
+.header_con #nav .morepro .ul3 div:nth-of-type(7) a span{
+	margin-left: -8px;
+}
+.header_con #nav .morepro .ul3 div:nth-of-type(8) a span{
+	margin-left: 20px;
+}
+.header_con #nav {
+	position: absolute;
+	left:233px;
+	top: 34px;
+	height: 14px;
+	float: right;
+}
+
+.header_con #nav li {
+	float: left;
+}
+
+.header_con #nav li a {
+	display: block;
+	color: #333;
+	margin-left: 30px;
+	height: 14px;
+	font-size: 14px;
+	line-height: 14px;
+}
+
+.header_con #denglu {
+	position: absolute;
+	top: 28px;
+	right: 64px;
+	width: 22px;
+	height: 80px;
+}
+
+.header_con #shopcar {
+	position: absolute;
+	width: 23px;
+	display: block;
+	height: 21px;
+	right: 12px;
+	top: 26px;
+}
+
+.header_con #shopcar a i {
+	position: absolute;
+	width: 23px;
+	height: 21px;
+	font-size: 26px;
+	display: block;
+	z-index: 20;
+	color: #666;
+}
+
+.header_con #shopcar a em {
+	font-size: 12px;
+	position: absolute;
+	top: 0;
+	left: 12px;
+	color: #ff0000;
+}
+.header_con #search {
+	position: absolute;
+	width: 182px;
+	height: 32px;
+	right:115px;
+	top:24px;
+}
+.header_con #search input{
+	width: 163px;
+	height: 30px;
+	border:1px solid #e5e5e5;
+	border-radius: 20px;
+	padding-left: 17px;
+	outline:none;
+}
+.header_con #search .ss{
+	position: absolute;
+	top:10px;
+	right:14px;
+}
+#user{
+	position: absolute;
+	width: 70px;
+	height: 66px;
+	left:-25px;
+	top:30px;
+	font-size: 12px;
+	background: #333;
+	text-align: center;
+	display: none;
+}
+#user a{
+	color:#515151;
+	margin-top: 10px;
+	display: block;
+}
+/*buy*/
+#buy{
+	min-height: 952px;
+	_height:952px;
+}
+.buy_con{
+	min-height: 952px;
+	_height: 952px;
+}
+.buy_con h2{
+	padding-top: 15px;
+	font-size: 14px;
+	height: 25px;
+}
+.buy_con h2 a{
+	color:#999999;
+}
+.buy_con .phoneShow{
+	width: 495px;
+	height: 565px;
+	float: left;
+	background: pink;
+}
+.phoneShow .phoneShow_con{
+    margin: 25px 50px;
+    width: 395px;
+    height: 395px;
+}
+.phoneShow_con .imgBig{
+	width: 375px;
+	height: 375px;
+	padding-top: 20px;
+}
+.imgUl{
+	overflow: hidden;
+    text-align: center;
+    padding-top: 10px;
+}
+.imgUl li{
+    display: inline-block;
+    margin: 0 5px;
+}
+.p1 a,.p2 a{
+	color:#666;
+	font-size:12px;
+	margin-left: 5px;
+}
+.p1 i{
+	font-size:16px;
+	color:#ffcd3f;
+}
+.p2 i{
+	font-size:12px;
+	color:#00c3f5;
+}
+.phoneShow p{
+	float: left;
+	margin-left: 62px;
+}
+.phoneShow .p2{
+	margin-left: 44px;
+}
+/*bottom*/
+#bottom{
+	height: 295px;
+}
+.bottom_con{
+	height: 295px;
+}
+.bottom_con .bottom_top{
+	height: 192px;
+	margin-left: 4px;
+	border-bottom: 1px solid #eee;
+}
+.bottom_con .bottom_top ul{
+	float: left;
+    width: 960px;
+    margin-bottom:16px;
+    padding-top: 60px;
+}
+.bottom_con .bottom_top ul li{
+	float: left;
+    width: 240px;
+    margin-bottom: 27px;
+    line-height: 30px;
+}
+.bottom_con .bottom_top ul li a{
+	color: #999;
+}
+.bottom_top ul li a i{
+	color: #999;
+    vertical-align: middle;
+    font-size: 24px;
+}
+.bottom_top ul li a span{
+	vertical-align: middle;
+    font-size: 14px;
+}
+.bottom_top .bottom_topR{
+	float: right;
+    margin-top: 65px;
+    text-align: right;
+}
+.bottom_top .bottom_topR .desc{
+	font-size: 12px;
+    margin-bottom: 2px;
+    color:#999;
+}
+.bottom_top .bottom_topR .tel{
+	display: block;
+    font-size: 20px;
+    color: #00c3f5;
+    margin-bottom: 8px;
+}
+.bottom_top .bottom_topR .online{
+    display: inline-block;
+    vertical-align: middle;
+    width: 144px;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 3px;
+    background-color: #00c3f5;
+    line-height: 36px;
+    text-align: center;
+}
+.bottom_top .bottom_topR .online i{
+    vertical-align: middle;
+    font-size: 28px;
+}
+.bottom_top .bottom_topR .online span{
+	display: inline-block;
+    vertical-align: middle;
+    padding-right: 6px;
+}
+.bottom_bottom ul{
+	margin: 26px 0 18px;
+	height: 16px;
+}
+.bottom_bottom ul li{
+    float: left;
+    border-right: 1px solid #efefef;
+}
+.bottom_bottom ul li a{
+	color: #999;
+    font-size: 12px;
+    padding: 0 15px;
+    line-height: 12px;
+}
+.bottom_bottom ul li .pl0{
+	padding-left: 0;
+}
+.bottom_bottom ul .br0{
+	border-right:0;
+}
+.bottom_bottom .bq{
+	font-size: 12px;
+	color:#999;
+}
+.bottom_bottom .bq a{
+	color:#999;
+}
+.bottom_bottom .bq img{
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: -4px;
+	margin-left: 5px;
+}
+.bottom_bottomL{
+	float: left;
+}
+#bottom_bottomR{
+	float: right;
+	padding-top: 52px;
+	margin: 0;
+	position: relative;
+}
+#bottom_bottomR i{
+	font-size:23px;
+}
+#bottom_bottomR #br0{
+	border-right: 0;
+}
+#bottom_bottomR li a{
+	padding: 0 13px;
+}
+#bottom_bottomR #br0 a{
+	padding-right:0;
+}
+#bottom_bottomR #br0 i{
+	font-size:26px;
+}
+#bottom_bottomR div{
+	position: absolute;
+	bottom:28px;
+	left:-10px;
+	display: none;
+}
+

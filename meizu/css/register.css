@@ -1,132 +1,55 @@
-@charset "UTF-8";
-html,body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img {
-	margin: 0;
-	padding: 0;
-}
-
-ul,ol,li {
-	list-style: none;
-}
-
-a,u {
-	text-decoration: none;
-}
-
-h1,h2,h3,h4,h5,h6 {
-	font-size: 16px;
-	font-weight: 100;
-}
-
-b,strong {
-	font-weight: 100;
-}
-
-i,em {
-	font-style: normal;
-}
-
-img {
-	border: 0;
-	display: block;
-}
-
-html,body {
-	height: 100%;
-}
-
-.clearfix:after {
-	content: ".";
-	clear: both;
-	height: 0;
-	display: block;
-	overflow: hidden;
-	visibility: hidden;
-}
-
-.clearfix {
-	zoom: 1;
-}
-
-.header_con,.main_con,.footer_con{
-	width: 1200px;
-	margin: 0 auto;
-}
-/*header*/
-#header{
-	width: 100%;
-	height:40px;
-	padding-top: 28px;
-}
-.header_con a{
-	display: block;
-	width: 110px;
-	height: 20px;
-	float: left;
-}
-.header_con a i{
-	color:#1eb9ee;
-	font-size:19px;
-	line-height: 19px;
-}
 /*main*/
-#main{
-	height: 750px;
-	background:#f8fcff url(../images/banner.png) no-repeat center;
-}
-.main_con{
-	position: relative;
-	height: 750px;
-}
-#main form{
-	width: 298px;
-    position: absolute;
-    top: 14%;
-    right: 220px;
-    background-color: #FFF;
-    padding: 72px 35px 20px;
-    border-radius: 2px;
-}
 #main form .title{
 	text-align: center;
 	margin-bottom: 108px;
 }
-#main form a{
+#main form .title .linkABlue{
 	color: #00a7ea;
 	font-size: 18px;
-	
+	height: 18px;
+	line-height: 18px;
 }
 .main_con .txt-box{
 	display: none;
 } 
 .main_con .sjh{
-    font-size: 14px;
+    font-size: 16px;
     display: block;
-    height: 46px;
-    line-height: 46px;
+    height: 48px;
+    line-height: 48px;
     border: 1px solid #dadada;
     outline: none;
     color: #474747;
+    margin-bottom: 36px;
+    border-radius: 2px;
 }
-.main_con .sjh span{
+.main_con .sjh div{
 	display: inline-block;
-    width: 60px;
+    width: 70px;
     border-right: 1px solid #DDD;
     cursor: pointer;
     outline: none;
-}
-.main_con .sjh span .qh{
-	line-height: 22px;
-    height: 22px;
-    width: 60%;
-    color: grey;
-    text-align: center;
-    cursor: pointer;
+    height: 48px;
     position: relative;
+}
+.main_con .sjh div .qh{
+	width: 54px;
+	padding-left: 16px;
+    color: grey;
+    cursor: pointer;
     display: inline-block;
-    padding: 0px 10px;
     height: 42px;
     border:0;
     outline: none;
+    font-size: 15px;
+}
+.main_con .sjh div i{
+	position: absolute;
+	top:0;
+	right:6px;
+	color:#b2b2b2;
+	font-weight: bold;
+	line-height: 52px;
 }
 .main_con .sjh #phone{
 	line-height: 22px;
@@ -137,12 +60,80 @@ html,body {
     border:0;
     outline: none;
 }
-/*footer*/
-#footer{
-	bottom: 0;
-    width: 100%;
-    height: 130px;
-    border-top: solid 1px #E5E6E7;
-    background-color: #fff;
-    color: black;
+.main_con .yz{
+	width: 296px;
+	height: 44px;
+	border:1px solid #dadada;
+	margin-bottom: 30px;
+	background: linear-gradient(to bottom,#fefefe,#f4f4f4);
+	border-radius: 2px;
+	position: relative;
+	cursor: pointer;
+}
+.main_con .active{
+	background: linear-gradient(to top,#fefefe,#f4f4f4);
+}
+.main_con .yz .circle{
+	position: absolute;
+	left: 6px;
+	top:6px;
+	width: 30px;
+	height: 30px;
+	border:1px solid #2488ff;
+	border-radius: 50%;
+	background: #c5daf9;
+}
+.main_con .yz .circle .center{
+	position: absolute;
+	border-radius: 50%;
+	width: 12px;
+	height: 12px;
+	background: #2488ff;
+	top:9px;
+	left:9px;
+}
+.main_con .yz .yz_tip{
+	width: 250px;
+	padding-left: 46px;
+	height: 42px;
+	line-height: 42px;
+	font-size: 14px;
+	color:#666;
+	text-align: left;
+}
+.main_con .yz .geetest_logo{
+	position: absolute;
+	display: block;
+	width: 20px;
+	height: 20px;
+	right:12px;
+	top:12px;
+	background: url(../images/sprite.png) no-repeat;
+	background-position-y: -105px;
+}
+.main_con .rememberField{
+	margin-bottom: 30px;
+    height: 20px;
+    line-height: 20px;
+    color:#515151;
+}
+.main_con .rememberField a{
+    color: #00a7ea;
+}
+.main_con #btn{
+	width: 298px;
+	height: 46px;
+	text-align: center;
+	background: #00a7ea;
+	border:0;
+	color:#fff;
+	border-radius:2px;
+	margin-bottom: 20px;
+	cursor: pointer;
+	font-size: 14px;
+	line-height: 46px;
+}
+.main_con .login{
+	color:#00A7EA;
+	font-size: 14px;
 }

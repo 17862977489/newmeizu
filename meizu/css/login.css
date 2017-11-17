@@ -1,0 +1,153 @@
+/*main*/
+#main form{
+	top: 10%;
+	padding: 35px 35px 10px;
+}
+#main .title{
+    font-size: 18px;
+    line-height: 18px;
+    height: 18px;
+    margin-top: 35px;
+    width: 300px;
+    text-align: center;
+    margin-bottom: 74px;
+}
+#main .title .zhdl{
+	color:#32a5e7;
+}
+#main .title .fgx{
+	color: #B3ABAB;
+    display: inline-block;
+    border: 2px solid #B3ABAB;
+    border-left: 1px;
+    height: 10px;
+    line-height: 20px;
+    margin-right: 32px;
+    margin-left: 32px;
+}
+#main .title .yzmdl{
+	color:#7f7f7f;
+}
+#main .main_con #account,#main .main_con #password{
+	width: 286px;
+	height: 46px;
+	border: 1px solid #dadada;
+	padding-left: 10px;
+	border-radius: 2px;
+	margin-bottom: 20px;
+}
+.main_con .yz{
+	width: 296px;
+	height: 44px;
+	border:1px solid #dadada;
+	margin-bottom: 30px;
+	background: linear-gradient(to bottom,#fefefe,#f4f4f4);
+	border-radius: 2px;
+	position: relative;
+	cursor: pointer;
+}
+.main_con .active{
+	background: linear-gradient(to top,#fefefe,#f4f4f4);
+}
+.main_con .yz .circle{
+	position: absolute;
+	left: 6px;
+	top:6px;
+	width: 30px;
+	height: 30px;
+	border:1px solid #2488ff;
+	border-radius: 50%;
+	background: #c5daf9;
+}
+.main_con .yz .circle .center{
+	position: absolute;
+	border-radius: 50%;
+	width: 12px;
+	height: 12px;
+	background: #2488ff;
+	top:9px;
+	left:9px;
+}
+.main_con .yz .yz_tip{
+	width: 250px;
+	padding-left: 46px;
+	height: 42px;
+	line-height: 42px;
+	font-size: 14px;
+	color:#666;
+	text-align: left;
+}
+.main_con .yz .geetest_logo{
+	position: absolute;
+	display: block;
+	width: 20px;
+	height: 20px;
+	right:12px;
+	top:12px;
+	background: url(../images/sprite.png) no-repeat;
+	background-position-y: -105px;
+}
+.rememberField {
+    margin-bottom: 25px;
+    height: 24px;
+    line-height: 20px;
+}
+.mzchkbox, .mzradio {
+    cursor: pointer;
+}
+.checkboxPic {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    cursor: pointer;
+    vertical-align: middle;
+    overflow: hidden;
+    background: url(../images/kjzmm.png) no-repeat center;	
+}
+#remember{
+    background-color: white;
+    outline: none;
+}
+.rememberField label {
+    margin-right: 7px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #7f7f7f;
+}
+.main_con #btn{
+	width: 298px;
+	height: 46px;
+	text-align: center;
+	background: #00a7ea;
+	border:0;
+	color:#fff;
+	border-radius:2px;
+	margin-bottom: 14px;
+	cursor: pointer;
+	font-size: 14px;
+	line-height: 46px;
+}
+.main_con .register{
+	color:#00A7EA;
+	font-size: 14px;
+}
+.main_con .wjmm{
+	float: right;
+	color:#00A7EA;
+	font-size: 14px;
+}
+/*footer*/
+#footer .footer_con .link{
+	padding-top: 44px;
+	height: 14px;
+	width: 450px;
+	display: inline-block;
+	float: left;
+	position: relative;
+}
+.footer_con .footer_bottom .ghs{
+	padding-left: 18px;
+	background: url(../images/ghs.png) no-repeat left center;
+	background-size: 15px 14px;
+}

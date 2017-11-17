@@ -91,7 +91,7 @@ html,body {
 .banner_con #nav .morepro{
 	position: absolute;
 	width: 1920px;
-	height: 0;
+	height: 0px;
 	top:13px;
 	left:-739px;
 	background: #fff;
@@ -203,7 +203,22 @@ html,body {
 	position: absolute;
 	left:339px;
 }
-
+#user{
+	position: absolute;
+	width: 70px;
+	height: 66px;
+	left:-25px;
+	top:30px;
+	font-size: 12px;
+	background: #fff;
+	text-align: center;
+	display: none;
+}
+#user a{
+	color:#515151;
+	margin-top: 10px;
+	display: block;
+}
 .banner_con #logo {
 	display: block;
 	width: 115px;
@@ -247,7 +262,7 @@ html,body {
 	top: 28px;
 	right: 64px;
 	width: 22px;
-	height: 22px;
+	height: 80px;
 }
 
 .banner_con #shopcar {

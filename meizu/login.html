@@ -2,13 +2,13 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title> Flyme 账号 - 注册</title>
-		<link rel="stylesheet" href="iconfont/iconfont.css" />
-		<link rel="stylesheet" type="text/css" href="css/register.css"/>
+		<title> Flyme 账号 - 登录 </title>
+		<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css"/>
 		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
 	</head>
 	<body>
-		<!--header-->
+	<!--header-->
 		<div id="header">
 			<div class="header_con">
 				<h1>
@@ -23,17 +23,15 @@
 			<div class="main_con">
 				<form action="">
 					<div class="title">
-						<a class="linkABlue" href="javascript:void(0);">注册 Flyme 账号</a>
+						<a class="zhdl" href="javascript:void(0);">账号登录</a>
+						<span class="fgx"></span>
+						<a class="yzmdl" href="javascript:void(0);">验证码登录</a>
 					</div>
-					<div class="txt-box">
-	                    <span class="">我们已发送一条验证码至 <span id="phoneNum" style="display: inline-block;">+86 </span>，请输入短信中的验证码</span>
-	                </div>
 	                <div class="sjh">
-	                	<div>
-	                		<input type="text" value="+86" class="qh"/>
-	                		<i class="iconfont icon-arrowdown"></i>
-	                	</div>
-	                	<input id="phone" name="phone" class="ipt-phone inp-focus" maxlength="11" placeholder="手机号码" autocomplete="off" style="margin-bottom: 20px;">
+	                	<input class="ipt-account inp-focus" name="account" id="account" maxlength="50" placeholder="手机号/ Flyme 账号" autocomplete="off">
+	                </div>
+	                <div>
+	                	<input type="password" class="inp-focus" name="password" id="password" maxlength="16" autocomplete="off" placeholder="密码">
 	                </div>
 	                <div class="yz">
 	                	<div class="circle">
@@ -44,15 +42,21 @@
 	                	</div>
 	                	<a href="javascript:void(0);" class="geetest_logo"></a>
 	                </div>
-	                <div class="rememberField" style="font-size:12px;">
-                    	<label class="pointer" class="linkblue">点击立即注册，即表示您同意并愿意遵守</label>
-                    	<a href="javascript:void(0);" class="linkABlue linkblue">Flyme服务协议</a>
-                    	<label class="pointer">和</label>
-                    	<a href="javascript:void(0);" class="linkABlue linkblue">法律声明</a>
-					</div>
-					<input type="submit" value="立即注册" id="btn"/>
-					<a href="javascript:void(0);" class="login linkblue">
-						登录
+	                <div class="rememberField">
+		                <span class="mzchkbox">
+		                	<span class="checkboxPic check_chk">
+		                		<i class="i_icon"></i>
+		                	</span>
+		                	<input name="remember" id="remember" type="checkbox" value="1" style="display: none;" checked="checked">
+		                </span>
+		                <label for="remember" tabindex="0">记住登录状态</label>
+	                </div>
+					<input type="submit" value="登录" id="btn"/>
+					<a href="javascript:void(0);" class="register linkblue">
+						注册
+					</a>
+					<a href="javascript:void(0);" class="wjmm linkblue">
+						忘记密码？
 					</a>
 				</form>
 			</div>
@@ -66,6 +70,7 @@
 						<li><a href="javascript:void(0);">工作机会</a></li>
 						<li><a href="javascript:void(0);">联系我们</a></li>
 						<li><a href="javascript:void(0);">法律声明</a></li>
+						<li><a href="javascript:void(0);">常见问题</a></li>
 						<li><span class="language">简体中文
 							<a href="javascript:void(0);" class="yuyan">English</a></span>
 						</li>
@@ -89,10 +94,11 @@
 					<a href="javascript:void(0);" class="linkAGray">备案号: 粤ICP备13003602号-4</a>
 					<a href="javascript:void(0);" class="linkAGray">经营许可证编号: 粤B2-20130198</a>
 					<a href="javascript:void(0);" class="linkAGray">营业执照</a>
+					<a href="javascript:void(0);" class="ghs">粤公网安备 44049102496076号</a>
 				</div>
 			</div>
 		</div>
 	</body>
 </html>
-<script src="js/register.js" type="text/javascript" charset="utf-8"></script>
-<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/login.js"></script>
