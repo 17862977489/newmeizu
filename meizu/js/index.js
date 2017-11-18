@@ -193,6 +193,7 @@ window.onload=function(){
 	btn();
 	showpro();
 	acolor();
+	//用户登陆
 	$("#denglu").mouseenter(function(){
 		$("#user").css("display","block");
 	})
@@ -215,6 +216,7 @@ function ul1(){
 		$(".morepro1").css("display","block");
 		$(".morepro1").animate({"height":"150px"},300);
 		$(".morepro1").find(".ul1").css("display","block");
+		$(".icon-gouwuche").css("color","#666");
 	})
 	$(".mzsj").mouseleave(function(){
 		$(this).find(".blu").css("color","#fff");
@@ -224,6 +226,7 @@ function ul1(){
 		$(".tit").css("background","rgba(255,255,255,0)");
 		$(".morepro1").animate({"height":"0"},300);
 		$(".morepro1").find(".ul1").css("display","none");
+		$(".icon-gouwuche").css("color","#fff");
 	})
 }
 function ul2(){
@@ -235,6 +238,7 @@ function ul2(){
 		$(".morepro2").css("display","block");
 		$(".morepro2").animate({"height":"150px"},300);
 		$(".morepro2").find(".ul2").css("display","block");
+		$(".icon-gouwuche").css("color","#666");
 	})
 	$(".mlsj").mouseleave(function(){
 		$(this).find(".blu").css("color","#fff");
@@ -244,6 +248,7 @@ function ul2(){
 		$(".tit").css("background","rgba(255,255,255,0)");
 		$(".morepro2").animate({"height":"0"},300);
 		$(".morepro2").find(".ul2").css("display","none");
+		$(".icon-gouwuche").css("color","#fff");
 	})
 }
 function ul3(){
@@ -255,6 +260,7 @@ function ul3(){
 		$(".morepro3").css("display","block");
 		$(".morepro3").animate({"height":"150px"},300);
 		$(".morepro3").find(".ul3").css("display","block");
+		$(".icon-gouwuche").css("color","#666");
 	})
 	$(".znpj").mouseleave(function(){
 		$(this).find(".blu").css("color","#fff");
@@ -264,8 +270,10 @@ function ul3(){
 		$(".tit").css("background","rgba(255,255,255,0)");
 		$(".morepro3").animate({"height":"0"},300);
 		$(".morepro3").find(".ul3").css("display","none");
+		$(".icon-gouwuche").css("color","#fff");
 	})
 }
+//导航特效
 function navC(){
 	for(var i=0;i<$("#nav").find("li").length;i++){
 		$("#nav").find("li").eq(i).mouseenter(function(){
@@ -285,7 +293,7 @@ function phoneMove(){
 		$(this).find("img").stop().animate({"left":"0"},500);
 	})
 }
-
+//按钮显示
 function showbtn(){
 	$(".find_phone_con_top").mouseenter(function(){
 		$(".find_phone_btnL").css("display","block");

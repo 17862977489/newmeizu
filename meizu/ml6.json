@@ -1,0 +1,66 @@
+{
+	"ml6l" :{
+		"ml6":[
+			{
+				"src1" : "ml6l-dt1.jpg",
+				"src2" : "ml6l-dt2.jpg",
+				"src3" : "ml6l-dt3.jpg",
+				"src4" : "ml6l-dt4.jpg"
+			},
+			{
+				"src1" : "ml6l-xt1.jpg",
+				"src2" : "ml6l-xt2.jpg",
+				"src3" : "ml6l-xt3.jpg",
+				"src4" : "ml6l-xt4.jpg"
+			}
+		]
+	},
+	"ml6j" :{
+		"ml6":[
+			{
+				"src1" : "ml6j-dt1.jpg",
+				"src2" : "ml6j-dt2.jpg",
+				"src3" : "ml6j-dt3.jpg",
+				"src4" : "ml6j-dt4.jpg"
+			},
+			{
+				"src1" : "ml6j-xt1.jpg",
+				"src2" : "ml6j-xt2.jpg",
+				"src3" : "ml6j-xt3.jpg",
+				"src4" : "ml6j-xt4.jpg"
+			}
+		]
+	},
+	"ml6h" :{
+		"ml6":[
+			{
+				"src1" : "ml6h-dt1.jpg",
+				"src2" : "ml6h-dt2.jpg",
+				"src3" : "ml6h-dt3.jpg",
+				"src4" : "ml6h-dt4.jpg"
+			},
+			{
+				"src1" : "ml6h-xt1.jpg",
+				"src2" : "ml6h-xt2.jpg",
+				"src3" : "ml6h-xt3.jpg",
+				"src4" : "ml6h-xt4.jpg"
+			}
+		]
+	},
+	"ml6y" :{
+		"ml6":[
+			{
+				"src1" : "ml6y-dt1.jpg",
+				"src2" : "ml6y-dt2.jpg",
+				"src3" : "ml6y-dt3.jpg",
+				"src4" : "ml6y-dt4.jpg"
+			},
+			{
+				"src1" : "ml6y-xt1.jpg",
+				"src2" : "ml6y-xt2.jpg",
+				"src3" : "ml6y-xt3.jpg",
+				"src4" : "ml6y-xt4.jpg"
+			}
+		]
+	}
+}

@@ -3,6 +3,15 @@
 	top: 10%;
 	padding: 35px 35px 10px;
 }
+#main .way{
+	position: absolute;
+	top:10px;
+	right:10px;
+	width: 36px;
+	height: 36px;
+	z-index: 99;
+	cursor: pointer;
+}
 #main .title{
     font-size: 18px;
     line-height: 18px;
@@ -12,7 +21,10 @@
     text-align: center;
     margin-bottom: 74px;
 }
-#main .title .zhdl{
+#main .title a{
+	color:#7f7f7f;
+}
+#main .title .current{
 	color:#32a5e7;
 }
 #main .title .fgx{
@@ -24,9 +36,6 @@
     line-height: 20px;
     margin-right: 32px;
     margin-left: 32px;
-}
-#main .title .yzmdl{
-	color:#7f7f7f;
 }
 #main .main_con #account,#main .main_con #password{
 	width: 286px;
@@ -136,6 +145,36 @@
 	float: right;
 	color:#00A7EA;
 	font-size: 14px;
+}
+.qr_panel {
+    position: absolute;
+    width: 100%;
+    height: 450px;
+    top: 60px;
+    left: 0;
+    background-color: #FFF;
+    z-index: 500;
+    display: none;
+}
+.qr_panel h3 {
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    font-weight: normal;
+    margin: 0;
+}
+.qr_panel .qr_img_box {
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+}
+.qr_panel .qr_img_box img{
+	width: 100%;
+}
+.qr_panel .tips {
+    text-align: center;
+    font-size: 16px;
+    color: #999;
 }
 /*footer*/
 #footer .footer_con .link{

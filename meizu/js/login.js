@@ -3,6 +3,21 @@ window.onload=function(){
 	linkgrey();
 	wwk();
 	yqlink();
+	var flag=true;
+	way();
+	function way(){
+		$(".way").click(function(){
+			if(flag){
+				$(".qr_panel").css("display","block");
+				$(".way img").attr("src","images/ewmdl2.png");
+				flag=false;
+			}else{
+				$(".qr_panel").css("display","none");
+				$(".way img").attr("src","images/ewmdl.png");
+				flag=true;
+			}
+		})
+	}	
 }
 function formsj(){
 	$("#btn").mouseenter(function(){
@@ -68,3 +83,4 @@ function yqlink(){
 		$(".yuyan").css("display","none");
 	})
 }
+
