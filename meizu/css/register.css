@@ -10,8 +10,66 @@
 	line-height: 18px;
 }
 .main_con .txt-box{
-	display: none;
+	display:none;
+	margin-bottom: 92px;
 } 
+.txt-box {
+    height: 33px;
+    padding: 5px 0px;
+    color: #666;
+    font-size: 12px;
+}
+#phoneNum {
+    display: inline-block;
+    color: #00a7ea;
+}
+.normalInput,.pwdInput{
+    width: auto;
+    font-size: 14px;
+    display: block;
+    height: 46px;
+    line-height: 46px;
+    border-radius: 2px;
+    margin-bottom: 36px;
+    padding: 0px 10px;
+    border: 1px solid #dadada;
+    outline: none;
+    color: #474747;
+    zoom: 1;
+    position: relative;
+    display: none;
+}
+.normalInput input,.pwdInput input{
+    line-height: 22px;
+    padding: 12px 0;
+    height: 22px;
+    width: 144px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+.form-line {
+    color: #d9d9d9;
+    height: 40px;
+    display: inline-block;
+    border-left: 1px solid #dadada;
+    position: absolute;
+    right: 140px;
+    top: 5px;
+}
+#getKey {
+    width: 120px;
+    text-align: center;
+    border: none;
+    outline: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    position: absolute;
+    right: 15px;
+    top: 0px;
+    color: #00a7ea;
+}
 .main_con .sjh{
     font-size: 16px;
     display: block;
@@ -73,10 +131,21 @@
 .main_con .active{
 	background: linear-gradient(to top,#fefefe,#f4f4f4);
 }
-.main_con .yz .circle{
+.main_con .yz .yc{
 	position: absolute;
 	left: 6px;
 	top:6px;
+	width: 32px;
+	height: 32px;
+	overflow: hidden;
+}
+.main_con .yz .yc img{
+	position: absolute;
+	top:-157px;
+	left:7px;
+}
+.main_con .yz .circle{
+	position: absolute;
 	width: 30px;
 	height: 30px;
 	border:1px solid #2488ff;

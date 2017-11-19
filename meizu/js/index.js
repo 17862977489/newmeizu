@@ -184,6 +184,7 @@ $.ajax({
 
 window.onload=function(){
 	var index=0;
+	var ysj=null;
 	navC();
 	ul1();
 	ul2();
@@ -196,6 +197,24 @@ window.onload=function(){
 	//用户登陆
 	$("#denglu").mouseenter(function(){
 		$("#user").css("display","block");
+		if(getCookie("userInfo").uname&&getCookie("userInfo").ztz!=1){
+			$(".ljdl").css("display","none");
+			$(".ljzc").css("display","none");
+			$(".grzx").css("display","block");
+			$(".tcdl").css("display","block");
+		}
+	})
+	$(".tcdl").click(function(){
+		var json = {
+			"uname": getCookie("userInfo").uname ,
+			"upwd": getCookie("userInfo").upwd,
+			"ztz":1
+		}
+		document.cookie = "userInfo="+JSON.stringify(json);
+		$(".ljdl").css("display","block");
+		$(".ljzc").css("display","block");
+		$(".grzx").css("display","none");
+		$(".tcdl").css("display","none");
 	})
 	$("#denglu").mouseleave(function(){
 		$("#user").css("display","none");

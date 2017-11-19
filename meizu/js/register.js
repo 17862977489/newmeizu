@@ -3,6 +3,9 @@ window.onload=function(){
 	linkgrey();
 	wwk();
 	yqlink();
+	yz();
+	btndj();
+	inputdj();	
 }
 function formsj(){
 	$(".title").find("a").mouseenter(function(){
@@ -80,3 +83,75 @@ function yqlink(){
 		$(this).css("color","#000");
 	})
 }
+function yz(){
+	$(".yz").click(function(){
+		$(".circle").css("display","none");
+		$(".yzcg").css("display","block");
+		$(this).css({"border-color":"#26c267","background":"#eefff5"});
+		$(".tip_content").html("验证成功");
+		$(".tip_content").css({"color":"#26c267"});
+		$(".geetest_logo").css("background-position-y","-212px");
+	})
+}
+function inputdj(){
+	$(".phone").click(function(){
+		$(".sjh").css("border-color","#32a5e7");
+	})
+}
+function btndj(){
+	var flag=true;
+	var pwdflag=null;
+	$("#btn").click(function(){
+		var reg=/^1[3578]\d{9}$/;
+		var yzcg=$(".tip_content").html();
+		var sjh=$("#phone").val();
+		if(yzcg=="验证成功"&&reg.test(sjh)&&flag){
+			flag=false;
+			$(".txt-box").css("display","block");
+			$(".normalInput").css("display","block");
+			$("#getKey").html(getKey());
+			$("#getKey").click(function(){
+				$("#getKey").html(getKey());
+			})
+			$(".sjh").css("display","none");
+			$(".yz").css("display","none");
+			$(".rememberField").css("display","none");
+			$("#btn").attr("value","下一步");
+			$("#phoneNum").append(sjh);
+			$(".title").css("margin-bottom","74px");
+			$(".inp-focus").focus(function(){
+				$(".normalInput").css("border-color","#32a5e7");
+			})
+			$(".inp-focus").blur(function(){
+				$(".normalInput").css("border-color","#DADADA");
+			})
+			
+		}
+		if($("#btn").val()=="下一步"){
+			if($("#kapkey").val()==$("#getKey").html()){
+				$("#btn").val("提交");
+				$(".txt-box").html("密码长度为8-16位,至少包含字母、数字和符号中的两种类型，且不可与账号相同");
+				$(".normalInput").css("display","none");
+				$(".pwdInput").css("display","block");
+				$("#pwd").focus(function(){
+					$(".pwdInput").css("border-color","#32a5e7");
+				})
+				$("#pwd").blur(function(){
+					$(".pwdInput").css("border-color","#DADADA");
+				})
+			}
+		}
+		if($("#btn").val()=="提交"){
+			var mima=/(?!^[0-9]+$)(?!^[A-z]+$)(?!^[^A-z0-9]+$)^.{8,16}$/;
+			if(mima.test($("#pwd").val())){
+				var json = {
+					"uname": $("#phone").val() ,
+					"upwd": $("#pwd").val(),
+				}
+				document.cookie = "userInfo="+JSON.stringify(json);
+				$(location).attr("href","index.html");
+			}
+		}
+	})
+}
+

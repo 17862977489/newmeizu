@@ -12,7 +12,7 @@
 		<div id="header">
 			<div class="header_con">
 				<h1>
-					<a href="javascript:void(0);">
+					<a href="index.html">
 						<i class="iconfont icon-meizu"></i>
 					</a>
 				</h1>
@@ -26,7 +26,7 @@
 						<a class="linkABlue" href="javascript:void(0);">注册 Flyme 账号</a>
 					</div>
 					<div class="txt-box">
-	                    <span class="">我们已发送一条验证码至 <span id="phoneNum" style="display: inline-block;">+86 </span>，请输入短信中的验证码</span>
+	                    <span class="">我们已发送一条验证码至 <span id="phoneNum" style="display: inline-block;">+86 </span>,请输入下面的验证码</span>
 	                </div>
 	                <div class="sjh">
 	                	<div>
@@ -36,8 +36,11 @@
 	                	<input id="phone" name="phone" class="ipt-phone inp-focus" maxlength="11" placeholder="手机号码" autocomplete="off" style="margin-bottom: 20px;">
 	                </div>
 	                <div class="yz">
-	                	<div class="circle">
-	                		<div class="center"></div>
+	                	<div class="yc">
+	                		<img src="images/sprite.png" alt="" class="yzcg" style="display: none;"/>
+	                		<div class="circle">
+	                			<div class="center"></div>
+	                		</div>
 	                	</div>
 	                	<div class="yz_tip">
 	                		<span class="tip_content">点击按钮进行验证</span>
@@ -50,8 +53,16 @@
                     	<label class="pointer">和</label>
                     	<a href="javascript:void(0);" class="linkABlue linkblue">法律声明</a>
 					</div>
-					<input type="submit" value="立即注册" id="btn"/>
-					<a href="javascript:void(0);" class="login linkblue">
+					<div class="normalInput">
+						<input type="text" class="inp-focus" name="kapkey" id="kapkey" maxlength="6" placeholder="验证码" autocomplete="off">
+						<span class="form-line"></span>
+						<a id="getKey" href="javascript:void(0);" class="linkABlue"></a>
+					</div>
+					<div class="pwdInput">
+						<input type="password" id="pwd" name="pwd" placeholder="密码" autocomplete="off">
+					</div>
+					<input type="button" value="立即注册" id="btn"/>
+					<a href="login.html" class="login linkblue">
 						登录
 					</a>
 				</form>
@@ -94,5 +105,7 @@
 		</div>
 	</body>
 </html>
+<script src="js/public.js"></script>
+<script src="js/cookie.js"></script>
 <script src="js/register.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>

@@ -12,7 +12,7 @@
 		<div id="header">
 			<div class="header_con">
 				<h1>
-					<a href="javascript:void(0);">
+					<a href="index.html">
 						<i class="iconfont icon-meizu"></i>
 					</a>
 				</h1>
@@ -30,32 +30,51 @@
 						<span class="fgx"></span>
 						<a class="yzmdl" href="javascript:void(0);">验证码登录</a>
 					</div>
-	                <div class="sjh">
-	                	<input class="ipt-account inp-focus" name="account" id="account" maxlength="50" placeholder="手机号/ Flyme 账号" autocomplete="off">
-	                </div>
-	                <div>
-	                	<input type="password" class="inp-focus" name="password" id="password" maxlength="16" autocomplete="off" placeholder="密码">
-	                </div>
-	                <div class="yz">
-	                	<div class="circle">
-	                		<div class="center"></div>
-	                	</div>
-	                	<div class="yz_tip">
-	                		<span class="tip_content">点击按钮进行验证</span>
-	                	</div>
-	                	<a href="javascript:void(0);" class="geetest_logo"></a>
-	                </div>
-	                <div class="rememberField">
-		                <span class="mzchkbox">
-		                	<span class="checkboxPic check_chk">
-		                		<i class="i_icon"></i>
-		                	</span>
-		                	<input name="remember" id="remember" type="checkbox" value="1" style="display: none;" checked="checked">
-		                </span>
-		                <label for="remember" tabindex="0">记住登录状态</label>
-	                </div>
-					<input type="submit" value="登录" id="btn"/>
-					<a href="javascript:void(0);" class="register linkblue">
+					<div id="zhdl">
+						<div class="sjh">
+		                	<input class="ipt-account inp-focus" name="account" id="account" maxlength="50" placeholder="手机号/ Flyme 账号" autocomplete="off">
+		                </div>
+		                <div>
+		                	<input type="password" class="inp-focus" name="password" id="password" maxlength="16" autocomplete="off" placeholder="密码">
+		                </div>
+		                <div class="yz">
+		                	<div class="yc">
+		                		<img src="images/sprite.png" alt="" class="yzcg" style="display: none;"/>
+			                	<div class="circle">
+			                		<div class="center"></div>
+			                	</div>
+		                	</div>
+		                	<div class="yz_tip">
+		                		<span class="tip_content">点击按钮进行验证</span>
+		                	</div>
+		                	<a href="javascript:void(0);" class="geetest_logo"></a>
+		                </div>
+		                <div class="rememberField">
+			                <span class="mzchkbox">
+			                	<span class="checkboxPic check_chk">
+			                		<i class="i_icon"></i>
+			                	</span>
+			                	<input name="remember" id="remember" type="checkbox" value="1" style="display: none;">
+			                </span>
+			                <label for="remember" tabindex="0">记住登录状态</label>
+		                </div>
+					</div>
+					<div id="yzmdl">
+						<div class="sjh2">
+		                	<div class="sjh_con">
+		                		<input type="text" value="+86" class="qh"/>
+		                		<i class="iconfont icon-arrowdown"></i>
+		                	</div>
+		                	<input id="phone" name="phone" class="ipt-phone" maxlength="11" placeholder="手机号码" autocomplete="off" style="margin-bottom: 20px;">
+		                </div>
+		                <div class="normalInput">
+							<input type="text" class="inp-focus" name="kapkey" id="kapkey" maxlength="6" placeholder="验证码" autocomplete="off">
+							<span class="form-line"></span>
+							<a id="getKey" href="javascript:void(0);" class="linkABlue"></a>
+						</div>
+					</div>
+					<input type="button" value="登录" id="dlbtn"/>
+					<a href="register.html" class="register linkblue">
 						注册
 					</a>
 					<a href="javascript:void(0);" class="wjmm linkblue">
@@ -111,4 +130,5 @@
 	</body>
 </html>
 <script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/public.js"></script>
 <script src="js/login.js"></script>
