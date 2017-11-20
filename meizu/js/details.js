@@ -9,6 +9,38 @@ window.onload=function(){
 	scrolltop();
 	djsj();
 	json("ml6j");
+	jrgwc();
+	ljgm();
+}
+function ljgm(){
+	$("#J_btnBuy").click(function(){
+		$("#shopcar").find("em").html($("#J_quantity").val());
+		$(location).attr("href","shopcar.html");
+	})
+}
+function jrgwc(){
+	$("#J_btnAddCart").click(function(){
+		$("#shopcar").find("em").html($("#J_quantity").val());
+	})
+	$("#shopcar").click(function(){
+		$(location).attr("href","shopcar.html");
+	})
+	$(".vm_plus").click(function(){
+		var sl=Number($("#J_quantity").val())+1;
+		if(sl>=2){
+			$(".vm_minus").removeClass("disabled");
+		}
+		$("#J_quantity").val(sl);
+	})
+	$(".vm_minus").click(function(){
+		var sl=Number($("#J_quantity").val())-1;
+		if(sl<=1){
+			$(".vm_minus").addClass("disabled");
+			$("#J_quantity").val(1);
+		}else{
+			$("#J_quantity").val(sl);
+		}
+	})
 }
 function json(obj){
 	$.ajax({
@@ -57,9 +89,31 @@ function show(){
 		if($(document).scrollTop()>=250){
 			$("#xd").stop().animate({"height":"80px"},100,function(){
 				$(".mod_total").css("display","block");
+				$(".xd_con").css("display","block");
+				$("#J_totalPriceShortcut").html($(".price").find("em").html());
+				$("#J_summaryName").html("全网通公开版&nbsp;");
+				for(let i=0;i<$(".ysfl").find("a").length;i++){
+					if($(".ysfl").find("a").eq(i).attr("class")=="vm_sale_img selected"){
+						$("#J_summaryName").append($(".ysfl").find("a").eq(i).find("span").html()+"&nbsp;");
+						break;
+					}
+				}
+				for(let i=0;i<$(".ncrl").find("a").length;i++){
+					if($(".ncrl").find("a").eq(i).attr("class")=="selected"){
+						$("#J_summaryName").append($(".ncrl").find("a").eq(i).find("span").html()+"&nbsp;");
+						break;
+					}
+				}
+				for(let i=0;i<$(".tc").find("a").length;i++){
+					if($(".tc").find("a").eq(i).attr("class")=="selected"){
+						$("#J_summaryName").append($(".tc").find("a").eq(i).find("p").html());
+						break;
+					}
+				}
 			});
 		}else{
 			$("#xd").stop().animate({"height":"0"},100,function(){
+				$(".xd_con").css("display","none");
 				$(".mod_total").css("display","none");
 			});
 		}
@@ -68,8 +122,13 @@ function show(){
 		}else{
 			$("#backtop").stop().animate({"opacity":0},300);
 		}
+		if($(document).scrollTop()>=800){
+			$("#ayd").css({"margin-right": "0"});
+		}else{
+			$("#ayd").css({"margin-right": "-120px"});
+		}
 		if($(document).scrollTop()>=950){
-			$(".detail_ul").appendTo("#xd");
+			$(".detail_ul").appendTo(".xd_con");
 			$(".detail_ul").css({"top":"20px","z-index":"101"});
 		}else{
 			$(".detail_ul").css({"top":"20px","z-index":"99"});
@@ -87,11 +146,26 @@ function djsj(){
 	for(let i=0;i<$(".ncrl").find("a").length;i++){
 		$(".ncrl").find("a").eq(i).click(function(){
 			$(this).addClass("selected").siblings().removeClass("selected");
+			if($(this).find("span").html()=="3GB+32GB"){
+				$(".price").find("em").html("899.00");
+			}else{
+				$(".price").find("em").html("699.00");
+			}
+			$(".tc").find("a").eq(0).addClass("selected").siblings().removeClass("selected");
 		})
 	}
 	for(let i=0;i<$(".tc").find("a").length;i++){
 		$(".tc").find("a").eq(i).click(function(){
 			$(this).addClass("selected").siblings().removeClass("selected");
+			if($(".ncrl a").eq(0).attr("class")=="selected"&&$(".tc").find("a").eq(0).attr("class")=="selected"){
+				$(".price").find("em").html("899.00");
+			}else if($(".ncrl a").eq(0).attr("class")=="selected"&&$(".tc").find("a").eq(0).attr("class")!="selected"){
+				$(".price").find("em").html("999.00");
+			}else if($(".ncrl a").eq(1).attr("class")=="selected"&&$(".tc").find("a").eq(0).attr("class")=="selected"){
+				$(".price").find("em").html("699.00");
+			}else{
+				$(".price").find("em").html("799.00");
+			}
 		})
 	}
 }

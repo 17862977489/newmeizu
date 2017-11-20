@@ -30,15 +30,81 @@
 			</div>
 		</div>
 		<!--未登录-->
-		<div id="wdl">
+		<div id="wdl" style="display:none;">
 			<div class="wdl_con">
-				
+				<p>您还没有登录！登陆后可显示您账号中已加入的商品哦~</p>
+				<a href="javascript:;">去登陆</a>
 			</div>
 		</div>
 		<!--main-->
 		<div id="main">
 			<div class="main_con">
-				<div class="shopcar_con">
+				<table class="shopcar_con">
+					<thead>
+						<tr class="tab_tit">
+							<td class="cart-col-select">
+								<img src="images/kjzmm.png" alt="" />
+								<input type="checkbox" class="qx" style="display: none;"/>全选
+							</td>
+							<td class="cart-col-name">商品</td>
+							<td class="cart-col-price">单价(元)</td>
+							<td class="cart-col-number">数量</td>
+							<td class="cart-col-total">小计(元)</td>
+							<td class="cart-col-ctrl">操作</td>
+						</tr>
+					</thead>
+					<tbody class="cart-product">
+						<tr class="fl">
+							<td colspan="6">
+								<img src="images/kjzmm.png" alt="" />
+								<input type="checkbox" class="flxz" style="display: none;"/><span>魅族</span></td>
+						</tr>
+						<tr class="sj">
+							<td class="sj1">
+								<img src="images/kjzmm.png" alt="" class="xz"/>
+								<input type="checkbox" class="sjxz" style="display: none;"/>
+								<a href="details.html">
+									<img src="images/shopcarml6.png" alt="" class="sjt"/>
+								</a></td>
+							<td class="cart-col-name">
+								<a href="details.html">
+									<p>魅蓝6</p>
+									<span>全网通公开版 香槟金 2GB+16GB</span>
+								</a>
+							</td>
+							<td class="cart-col-price">￥699.00</td>
+							<td class="cart-col-number">
+								<div class="cart-product-number-adder">
+								   	<div class="mz-adder">
+										<div class="mz-adder-reduce">-</div>
+										<div class="mz-adder-num"><input type="text" class="mz-adder-input" value="1"></div>
+										<div class="mz-adder-add">+</div>
+									</div>
+								</div>
+							</td>
+							<td class="cart-col-total">￥699.00</td>
+							<td class="cart-col-ctrl">
+								<img src="images/remove.png" alt="" class="del"/>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="cal">
+					<div class="calL">
+						<img src="images/kjzmm.png" alt="" class="qx"/>
+						<input type="checkbox" class="qxz" style="display: none;"/>
+						<span>全选</span>
+						<span class="del">删除选中的商品</span>
+						<div class="count">共<i>1</i>件商品	,  已选择<em>1</em>件</div>
+					</div>	
+					<div class="calR">
+						<div class="price">
+							已优惠<b>0.00</b>元， 合计(不含运费)：<strong>￥699.00</strong>	
+						</div>
+						<a href="javascript:;" class="qjs">去结算</a>
+					</div>
+				</div>
+				<div>
 					
 				</div>
 			</div>

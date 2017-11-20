@@ -645,10 +645,12 @@
     border: 1px solid #dcdcdc;
     color: #666;
 }
-.property_buy .mod_control .vm_minus {
-    top: 22px;
+.property_buy .mod_control .disabled{
     cursor: default;
     color: #e0e0e0;
+}
+.property_buy .mod_control .vm_minus{
+	top:22px;
 }
 .property_buy .mod_control input {
     position: absolute;
@@ -735,6 +737,13 @@
 	background: rgba(255,255,255,0.6);
 	z-index: 100;
 }
+.xd_con{
+	width: 1240px;
+	margin: 0 auto;
+	overflow: hidden;
+	height: 81px;
+	display: none;
+}
 #xd .detail_ul{
 	position: absolute;
     width: 1240px;
@@ -748,16 +757,32 @@
     z-index: 1;
     margin-right: 35px;
 }
+.xd_con #ayd{
+	width: 380px;
+	height: 62px;
+	float: right;
+	margin-right: -120px;
+	overflow: hidden;
+}
+.xd_con .xzgm{
+	color:#fff;
+	background: #4dcff6;
+	float: right;
+	border-radius: 3px;
+	padding: 10px 30px;
+	font-size: 14px;
+	margin-top: 23px;
+}
 .mod_total{
-	position: absolute;
-	top:20px;
-	right:40px;
+	float: left;
 	font-size: 16px;
     color: #333;
+    margin-top: 20px;
     margin-right: 20px;
     line-height: 20px;
     text-align: right;
     display: none;
+    width: 240px;
 }
  .mod_total .vm_price {
     margin-left: 10px;

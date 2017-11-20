@@ -62,13 +62,279 @@ h1 a i{
 	height: 40px;
 	background: #ecf6fd;
 }
+.wdl_con{
+	text-align: center;
+}
+.wdl_con p{
+	display: inline-block;
+	color:#00ccf6;
+	font-size: 12px;
+	line-height: 40px;
+}
+.wdl_con a{
+	display: inline-block;
+	width: 70px;
+	height: 26px;
+	background: #00c3f5;
+	color:#fff;
+	font-size: 12px;
+	margin-top: 8px;
+	line-height: 24px;
+	border-radius: 2px;
+	margin-left: 16px;
+}
 /*main*/
 #main{
 	min-height: 381px;
 	_height:381px;
 	background: #f5f5f5;
 }
+#main .main_con{
+	padding-top: 10px;
+	padding-bottom: 40px;
+	border-bottom: 1px solid #EFEFEF;
+}
 #main .shopcar_con{
+	width: 100%;
 	min-height: 249px;
 	_height:249px;
+	border-collapse: collapse;
+}
+.cart-product{
+	font-size: 14px;
+}
+.tab_tit{
+	height: 49px;
+	border-bottom:1px solid #EFEFEF;
+	background: #fff;
+	color:#333;
+	font-size: 14px;
+}
+.shopcar_con .cart-col-name {
+    width: 270px;
+    text-align: left;
+}
+.shopcar_con .cart-col-price {
+    width: 220px;
+    text-align: center;
+}
+.shopcar_con .cart-col-number {
+    width: 200px;
+    text-align: center;
+}
+.shopcar_con .cart-col-total {
+    width: 160px;
+    text-align: center;
+}
+.shopcar_con .cart-col-ctrl {
+    width: 110px;
+    text-align: right;
+    padding-right: 40px;
+}
+.cart-product .fl td{
+	height: 50px;
+	border-bottom:1px solid #EFEFEF;
+	background: #fafafc;
+    color: #666;
+    font-size: 14px;
+	padding-left: 45px;
+}
+.fl img{
+	display: inline-block;
+	position: relative;
+	top:4px;
+	margin-right: 10px;
+	width: 19px;
+	height: 19px;
+}
+.sj{
+	height: 149px;
+	background: #fff;
+	border-bottom:1px solid #EFEFEF;
+}
+.main_con .cal{
+	margin-top: 10px;
+	background: #fff;
+	height: 70px;
+}
+.main_con .cal div{
+	float: left;
+}
+.tab_tit .cart-col-select {
+    width: 210px;
+    text-align: left;
+    padding-left: 45px;
+}
+.tab_tit .cart-col-select img{
+	display: inline-block;
+	float: left;
+	width: 19px;
+	height: 19px;
+	margin-right: 14px;
+}
+.sj .sj1{
+	padding-left: 45px;
+}
+.sj .sj1 .xz{
+	float: left;
+	margin-top: 40px;
+	margin-right:45px;
+	width: 19px;
+	height: 19px;
+}
+.sj .sj1 a{
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+}
+.sj .sj1 .sjt{
+	width: 100px;
+	height: 100px;
+}
+.sj .cart-col-price{
+	font-size: 16px;
+    color: #666;
+    font-weight: bolder;
+}
+.cart-product .cart-col-name{
+	line-height: 22px;
+}
+.cart-product .cart-col-name p {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color:#666;
+}
+.cart-product .cart-col-name span{
+	color:#999;
+}
+.cart-product-number-adder .mz-adder {
+    display: inline-block;
+    vertical-align: middle;
+}
+.mz-adder {
+    width: 140px;
+    height: 40px;
+    border: 1px solid #EFEFEF;
+    border-radius: 4px;
+    background-color: #fff;
+}
+.mz-adder-reduce {
+    position: relative;
+    float: left;
+    width: 40px;
+    height: 100%;
+    cursor: pointer;
+    line-height: 35px;
+    font-size: 30px;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-right: 1px solid #EFEFEF;
+}
+.mz-adder-num{
+	float: left;
+	width: 58px;
+    height: 40px;
+    top:0;
+    left:40px;
+}
+.mz-adder-num input{
+	border:0;
+	outline: none;
+	width: 58px;
+    height: 40px;
+    padding: 0;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+}
+.mz-adder-add{
+	border-left: 1px solid #EFEFEF;
+	width: 40px;
+	height: 40px;
+	float: right;
+	line-height: 35px;
+	font-size: 24px;
+	cursor: pointer;
+}
+.cart-product .cart-col-total{
+	font-size: 16px;
+	font-weight: bolder;
+    color: #e02b41;
+}
+.del{
+	margin-left: 88px;
+}
+.cal{
+	width: 100%;
+}
+.cal .calL{
+	color: #333;
+    font-size: 14px;
+	padding-left: 45px;
+	padding-top: 26px;
+	float: left;
+}
+.cal .calL .qx{
+	width: 19px;
+	height: 19px;
+	float: left;
+	margin-right: 15px;
+}
+.cal .calL span{
+	float: left;
+}
+.cal .calL .del{
+	color: #666;
+	margin-left: 25px;
+	float: left;
+	margin-right: 36px;
+}
+.cal .calL .count{
+	float: left;
+	color:#666;
+}
+.cal .calL .count i{
+    margin: 0 5px;
+    color: #333;
+    font-weight: bolder;
+}
+.cal .calL .count em{
+    margin: 0 5px;
+    color: #00c3f5;
+    font-weight: bolder;
+}
+.main_con .cal .calR{
+	float: right;
+    height: 100%;
+    margin-right: 30px;
+    padding-top: 17px;
+}
+.main_con .cal .calR .qjs{
+	display: inline-block;
+	color: #FFF;
+    background-color: #00c3f5;
+	width: 100px;
+	height: 36px;
+	text-align: center;
+	line-height: 36px;
+	border-radius: 4px;
+	margin-left: 34px;
+	font-size: 14px;
+}
+.main_con .cal .calR .price{
+	font-size: 14px;
+    color: #666;
+    line-height: 34px;
+}
+.main_con .cal .calR .price b,.main_con .cal .calR .price strong{
+	margin: 0 5px;
+    color: #e02b41;
+    font-weight: bolder;
+}
+.main_con .cal .calR .price strong{
+	font-size: 20px;
 }
