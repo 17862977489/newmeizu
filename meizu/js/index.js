@@ -57,7 +57,7 @@ $.ajax({
 						<a href="javascript:void(0);">`
 			}else{
 				str += `<div class="con1_con${i+1}">
-						<a href="details.html">`
+						<a href="parameter.html">`
 			}
 					str += `<img src="images/${arr[i].src}" alt="" />
 							<h4>${arr[i].name}</h4>
@@ -69,10 +69,10 @@ $.ajax({
 		for( var j = 0 ; j < arr1.length ; j++ ){
 			if(j%4==3){
 				str1+=`<li>
-							<a href="javascript:void(0);" id="mr0">`;
+							<a href="parameter.html" id="mr0">`;
 			}else{
 				str1+=`<li>
-							<a href="javascript:void(0);">`;
+							<a href="parameter.html">`;
 			}
 			str1+=`			<div class="phone_Img">
 								<img class="zm" src="images/${arr1[j].src1}" alt="" />
@@ -90,10 +90,10 @@ $.ajax({
 		for(var k=0;k<arr2.length;k++){
 			if(k%3==0){
 				str2+=`<li>
-						<a href="details.html" class="mr0">`;
+						<a href="javascript:;" class="mr0">`;
 			}else{
 				str2+=`<li>
-						<a href="details.html">`;
+						<a href="javascript:;">`;
 			}
 			str2+=`	<img src="images/${arr2[k].src}" alt="" />
 							<div class="info">
@@ -121,10 +121,10 @@ $.ajax({
 		for( var i = 0 ; i < arr.length ; i++ ){
 			if(i==3){
 				str+=`<li>
-						<a href="javascript:void(0);" class="mr0">`
+						<a href="parameter.html" class="mr0">`
 			}else{
 				str+=`<li>
-						<a href="javascript:void(0);">`
+						<a href="parameter.html">`
 			}
 			str+=`<div class="phone_img">
 								<img class="bm" src="images/${arr[i].src1}" alt="" />
@@ -140,7 +140,7 @@ $.ajax({
 		}
 		for(var i=0;i<arr1.length;i++){
 			str1+=`<div class="top${i+1}">
-						<a href="javascript:void(0);">
+						<a href="parameter.html">
 							<div class="phone_info">
 								<div>
 									<img src="images/${arr1[i][0].src}" alt="" />
@@ -150,7 +150,7 @@ $.ajax({
 								<em>￥${arr1[i][0].price}起</em>
 							</div>
 						</a>
-						<a href="javascript:void(0);">
+						<a href="parameter.html">
 							<div class="phone_info">
 								<div>
 									<img src="images/${arr1[i][1].src}" alt="" />
@@ -160,7 +160,7 @@ $.ajax({
 								<em>￥${arr1[i][1].price} 起</em>
 							</div>
 						</a>
-						<a href="javascript:void(0);">
+						<a href="parameter.html">
 							<div class="phone_info">
 								<div>
 									<img src="images/${arr1[i][2].src}" alt="" />
@@ -170,7 +170,7 @@ $.ajax({
 								<em>￥${arr1[i][1].price}起</em>
 							</div>
 						</a>
-						<a href="javascript:void(0);" class="mr0">
+						<a href="parameter.html" class="mr0">
 							<div class="phone_info">
 								<div>
 									<img src="images/${arr1[i][3].src}" alt="" />

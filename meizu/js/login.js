@@ -1,4 +1,10 @@
 window.onload=function(){
+	if(getCookie("userInfo1").jzname){
+		$("#account").val(getCookie("userInfo1").jzname)
+		$("#password").val(getCookie("userInfo1").jzpwd);
+		$(".checkboxPic").css("background","url(images/jzmm.png) center center no-repeat");
+		$("#remember").attr("checked","checked");
+	}
 	formsj();
 	linkgrey();
 	wwk();
@@ -108,7 +114,7 @@ function yqlink(){
 		$(".yuyan").css("display","none");
 	})
 }
-
+//登陆切换
 function dlqh(){
 	$(".yzmdl").click(function(){
 		$("#yzmdl").css("display","block");
@@ -137,7 +143,7 @@ function dlqh(){
 		$(".zhdl").addClass("current").siblings().removeClass("current");
 	})
 }
-
+//登陆
 function dl(){
 	var tusername,tpassword;
 	if( document.cookie ){
@@ -151,12 +157,22 @@ function dl(){
 		}
 		tusername = uInfo.uname;
 		tpassword = uInfo.upwd;
+	}else{
+		alert("请先注册");
+		$(location).attr("href","register.html");
 	}
 	var flagName=null;
 	$("#dlbtn").click(function(){
 		var str=$("#account").val();
 		var str2=$("#password").val();
-		if($("#remember").attr("checked")&&$(".tip_content").html()=="验证成功"){
+		if($("#remember").attr("checked")){
+			var json = {
+				"jzname": getCookie("userInfo").uname ,
+				"jzpwd": getCookie("userInfo").upwd
+			}
+			document.cookie = "userInfo1="+JSON.stringify(json);
+		}
+		if($(".tip_content").html()=="验证成功"){
 			var json = {
 				"uname": getCookie("userInfo").uname ,
 				"upwd": getCookie("userInfo").upwd
