@@ -40,6 +40,7 @@ window.onload=function(){
 		}
 	})
 }
+//表单事件
 function formsj(){
 	$("#btn").mouseenter(function(){
 		$(this).css("background","#2b8cc5");
@@ -60,6 +61,7 @@ function formsj(){
 		$(this).removeClass("active");
 	})
 }
+//移入事件
 function linkgrey(){
 	$(".linkAGray").mouseenter(function(){
 		$(this).css("color","#2b2b2b");
@@ -68,6 +70,7 @@ function linkgrey(){
 		$(this).css("color","#7f7f7f");
 	})
 }
+//验证码点击事件
 function yz(){
 	$(".yz").click(function(){
 		$(".circle").css("display","none");
@@ -78,6 +81,7 @@ function yz(){
 		$(".geetest_logo").css("background-position-y","-212px");
 	})
 }
+//微博微信空间
 function wwk(){
 	$(".footer_sinaMblog").mouseenter(function(){
 		$(this).css({"color":"#fb5353","border-color":"#fb5353"});
@@ -100,6 +104,7 @@ function wwk(){
 		$(this).css({"color":"#A8A8A8","border-color":"#c9c9c9"});
 	})
 }
+//友情链接
 function yqlink(){
 	$(".link").find("a").click(function(){
 		$(this).css("color","#515151");
@@ -146,17 +151,11 @@ function dlqh(){
 //登陆
 function dl(){
 	var tusername,tpassword;
-	if( document.cookie ){
-		var str = document.cookie;
-		var arr = str.split("; ");
-		for( var i = 0 ; i < arr.length ; i++ ){
-			var item = arr[i].split("=");
-			if( item[0] == "userInfo" ){
-				uInfo = JSON.parse( item[1] ) ;
-			}
-		}
-		tusername = uInfo.uname;
-		tpassword = uInfo.upwd;
+	console.log(getCookie("userInfo"));
+	if(getCookie("userInfo")){
+		var arr = getCookie("userInfo");
+		tusername = arr.uname;
+		tpassword = arr.upwd;
 	}else{
 		alert("请先注册");
 		$(location).attr("href","register.html");

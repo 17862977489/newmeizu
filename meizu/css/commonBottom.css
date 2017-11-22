@@ -184,6 +184,7 @@ html,body {
 }
 #bottom_bottomR #br0 i{
 	font-size:26px;
+	line-height: 4px;
 }
 #bottom_bottomR div{
 	position: absolute;

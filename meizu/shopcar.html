@@ -45,8 +45,8 @@
 					<thead>
 						<tr class="tab_tit">
 							<td class="cart-col-select">
-								<img src="images/jzmm.png" alt="" />
-								<input type="checkbox" class="qx" style="display: none;"/>全选
+								<img src="images/jzmm.png" alt="" class="selectAll" />
+								<input type="checkbox" id="selectAll" style="display: none;" checked="checked"/>全选
 							</td>
 							<td class="cart-col-name">商品</td>
 							<td class="cart-col-price">单价(元)</td>
@@ -58,8 +58,8 @@
 					<tbody class="cart-product clearfix">
 						<tr class="fl">
 							<td colspan="6">
-								<img src="images/jzmm.png" alt="" />
-								<input type="checkbox" class="flxz" style="display: none;"/><span>魅族</span></td>
+								<img src="images/jzmm.png" alt="" class="flxzimg"/>
+								<input type="checkbox" class="flxz" style="display: none;"  checked="checked"/><span>魅族</span></td>
 						</tr>
 						<!--<tr class="sj">
 							<td class="sj1">
@@ -93,8 +93,8 @@
 				</table>
 				<div class="cal">
 					<div class="calL">
-						<img src="images/jzmm.png" alt="" class="qx"/>
-						<input type="checkbox" class="qxz" style="display: none;"/>
+						<img src="images/jzmm.png" alt="" class="selectAll"/>
+						<input type="checkbox" class="qxz" style="display: none;"  checked="checked"/>
 						<span>全选</span>
 						<span class="del">删除选中的商品</span>
 						<div class="count">共<i>1</i>件商品	,  已选择<em>1</em>件</div>
@@ -106,7 +106,7 @@
 						<a href="javascript:;" class="qjs">去结算</a>
 					</div>
 				</div>
-				<div class="cart-empty unlogin">
+				<div class="cart-empty unlogin" style="display: none;">
 				    <div class="cart-empty-content">
 				        <div class="cart-empty-left"></div>
 				        <div class="cart-empty-right">
@@ -118,13 +118,13 @@
 					    </div>
 				    </div>
 				</div>
-				<div class="cart-empty login">
+				<div class="cart-empty login"  style="display: none;">
 				    <div class="cart-empty-content">
 				        <div class="cart-empty-left"></div>
 				        <div class="cart-empty-right">
 					        <div class="cart-empty-title">购物车内还没有商品，赶紧去选购吧~</div>
 							<div class="tips-btn">
-								<a class="mz-btn primary" href="index.html" data-mdesc="已登录且购物车为空返回商城首页按钮">返回商城首页</a>
+								<a class="mz-btn primary" href="commodity.html" data-mdesc="已登录且购物车为空返回商城首页按钮">返回商城首页</a>
 							</div>
 				        </div>
 				    </div>
@@ -132,144 +132,10 @@
 			</div>
 		</div>
 		<!--bottom-->
-		<div id="bottom">
-			<div class="bottom_con">
-				<div class="bottom_top">
-					<ul>
-						<li>
-							<a href="javascript:;">
-								<i class="iconfont icon-shunfengmendian01"></i>
-								<span>顺丰包邮</span>
-							</a>
-						</li>
-						<li>
-							<a href="javascript:;">
-								<i class="iconfont icon-shandian"></i>
-								<span>100+ 城市次日送达</span>
-							</a>
-						</li>
-						<li>
-							<a href="javascript:;">
-								<i class="iconfont icon-fanhui"></i>
-								<span>7 天无理由退货</span>
-							</a>
-						</li>
-						<li>
-							<a href="javascript:;">
-								<i class="iconfont icon-shuaxin-"></i>
-								<span>15 天换货保障</span>
-							</a>
-						</li>
-						<li>
-							<a href="javascript:;">
-								<i class="iconfont icon-banshou"></i>
-								<span>1 年免费保修</span>
-							</a>
-						</li>
-						<li>
-							<a href="javascript:;">
-								<i class="iconfont icon-dingwei"></i>
-								<span>2300+ 线下体验店</span>
-							</a>
-						</li>
-						<li>
-							<a href="javascript:;">
-								<i class="iconfont icon-screen"></i>
-								<span>远程支持服务</span>
-							</a>
-						</li>
-						<li>
-							<a href="javascript:;">
-								<i class="iconfont icon-fangchanxinxi"></i>
-								<span>上门快修</span>
-							</a>
-						</li>
-					</ul>
-					<div class="bottom_topR">
-						<p class="desc">24小时全国服务热线</p>
-						<a href="javascript:;" class="tel">400-788-3333</a>
-						<p>
-							<a href="javascript:;" class="online">
-								<i class="iconfont icon-liaotianico"></i>
-								<span>在线客服</span>
-							</a>
-						</p>
-					</div>
-				</div>
-				<div class="bottom_bottom">
-					<div class="bottom_bottomL">
-						<ul>
-							<li>
-								<a href="javascript:;" class="pl0">了解魅族</a>
-							</li>
-							<li>
-								<a href="javascript:;">加入我们</a>
-							</li>
-							<li>
-								<a href="javascript:;">联系我们</a>
-							</li>
-							<li>
-								<a href="javascript:;">Flyme</a>
-							</li>
-							<li>
-								<a href="javascript:;">魅族社区</a>
-							</li>
-							<li>
-								<a href="javascript:;">天猫旗舰店</a>
-							</li>
-							<li>
-								<a href="javascript:;">问题反馈</a>
-							</li>
-							<li class="br0">
-								<a href="javascript:;">线上销售授权名单公示</a>
-							</li>
-						</ul>
-						<div class="bq">
-							<p>
-								<span>©2017 Meizu Telecom Equipment Co., Ltd. All rights reserved.&nbsp;&nbsp;&nbsp;&nbsp;</span>
-								<a href="javascript:;">粤ICP备13003602号-2&nbsp;&nbsp;</a>
-								<a href="javascript:;">合字B2-20170010&nbsp;</a>
-								<a href="javascript:;">营业执照&nbsp;</a>
-								<a href="javascript:;">法律声明&nbsp;&nbsp;</a>
-								<img src="images/jh.png" alt="" />
-								<span>粤公网安备 44049102496009 号</span>
-								<a href="javascript:;" class="zj">
-									<img src="images/bq_03.png" alt="" />
-								</a>
-								<a href="javascript:;" class="jc">
-									<img src="images/bq_05.png" alt="" />
-								</a>
-								<a href="javascript:;" class="x">
-									<img src="images/bq_07.png" alt="" />
-								</a>
-							</p>			
-						</div>
-					</div>
-					<ul id="bottom_bottomR">
-						<li>
-							<a href="javascript:;">
-								<i class="iconfont icon-iconfontweibowukuang-copy"></i>
-							</a>
-						</li>
-						<li>
-							<a href="javascript:;">
-								<i class="iconfont icon-weixin"></i>
-							</a>
-						</li>
-						<li id="br0">
-							<a href="javascript:;">
-								<i class="iconfont icon-kongjian"></i>
-							</a>
-						</li>
-						<div>
-							<img src="images/wx.png" alt="" />
-						</div>
-					</ul>
-				</div>
-			</div>
-		</div>
+		<div id="bottom"></div>
 	</body>
 </html>
 <script src="js/jquery-1.11.1.min.js"></script>
 <script src="js/cookie.js"></script>
+<script src="js/public.js"></script>
 <script src="js/shopcar.js"></script>

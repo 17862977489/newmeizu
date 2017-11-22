@@ -4,10 +4,131 @@
 		"name":"魅蓝6",
 		"tit":"八核CPU+AI智能加速，大电池长续航！支持指纹解锁",
 		"price":"699"
-	},{
-		"src":"",
-		"name":"",
+	},
+	{
+		"src":"scmzpro7p.png",
+		"name":"魅族 PRO 7 Plus",
+		"tit":"双瞳如小窗 佳景观历历",
+		"price":"3299"
+	},
+	{
+		"src":"scmlnote6hhw.png",
+		"name":"魅蓝 Note6 航海王限量豪礼套装",
+		"tit":"11月20-24日每日前100名购机赠双向闪充移动电源",
+		"price":"1699"
+	},
+	{
+		"src":"scmlnote6.png",
+		"name":"魅蓝 Note6",
+		"tit":"高通骁龙 625 八核处理器  旗舰双摄拍照体验",
+		"price":"1099"
+	},
+	{
+		"src":"scmle2.png",
+		"name":"魅蓝 E2",
+		"tit":"11月1日0点起，32G直降300元",
+		"price":"999"
+	},
+	{
+		"src":"scmlnote5.png",
+		"name":"魅蓝 Note5",
+		"tit":"【领券减100元】 4000mAh大电池 大运存",
+		"price":"899"
+	},
+	{
+		"src":"scml5s.png",
+		"name":"魅蓝 5s",
+		"tit":"32G版限时直降100元 礼盒版领券立减100元",
+		"price":"799"
+	},
+	{
+		"src":"scmla5.png",
+		"name":"魅蓝 A5",
+		"tit":"【领券减100元】5英寸高清屏 轻巧双待长续航",
+		"price":"699"
+	},
+	{
+		"src":"scmzpro7.png",
+		"name":"魅族 PRO 7",
+		"tit":"双瞳如小窗 佳景观历历",
+		"price":"2499"
+	},
+	{
+		"src":"sclyq.png",
+		"name":"魅族路由器 极速版",
+		"tit":"天生不凡 快狠稳",
+		"price":"199"
+	},
+	{
+		"src":"scjbl.png",
+		"name":"JBL Charge2+ 便携迷你蓝牙音箱 低音炮",
+		"tit":"6期免息 IPX5级防水 低音户外便携  ",
+		"price":"1197"
+	},
+	{
+		"src":"sctsj.png",
+		"name":"铁三角Audio Technica ATH-EM7X",
+		"tit":"支持3期免息 经典em7复刻版，女毒首选没有之一  ",
+		"price":"488"
+	},
+	{
+		"src":"scjblej.png",
+		"name":"JBL T280A 立体声入耳式手机耳机",
+		"tit":"一键通话线控 通话音乐两用",
+		"price":"198"
+	},
+	{
+		"src":"scjbllyej.png",
+		"name":"JBL Reflect BT 蓝牙无线运动耳机 夜跑系列",
 		"tit":"",
-		"price":""
+		"price":"598"
+	},
+	{
+		"src":"scjbllyyx.png",
+		"name":"JBL GO音乐金砖 无线蓝牙音响",
+		"tit":"  “音乐小方块”  IF设计大奖",
+		"price":"268"
+	},
+	{
+		"src":"scmzep51ej.png",
+		"name":"魅族 EP51蓝牙运动耳机",
+		"tit":"臻享音质 自在运动",
+		"price":"229"
+	},
+	{
+		"src":"scmzsh.png",
+		"name":"魅族手环",
+		"tit":"腕间流动的心率专家",
+		"price":"229"
+	},
+	{
+		"src":"scmzep31ej.png",
+		"name":"魅族EP-31耳机",
+		"tit":"舒适均衡 精致优雅",
+		"price":"199"
+	},
+	{
+		"src":"scmzhz.png",
+		"name":"魅族盒子 一键找回遥控器",
+		"tit":"一键找回遥控器，海量容量，4K输出",
+		"price":"399"
+	},
+	{
+		"src":"scmzvr.png",
+		"name":"暴风魔镜S1 虚拟现实智能VR眼镜 安卓版",
+		"tit":"支持3期免息",
+		"price":"199"
+	},
+	{
+		"src":"scmzhd50ej.png",
+		"name":"魅族HD50 头戴式耳机",
+		"tit":"清新简洁，有音质更有颜值",
+		"price":"399"
+	},
+	{
+		"src":"scwxsb.png",
+		"name":"飞智黑武士蓝牙无线手柄",
+		"tit":"正版游戏云端适配 购飞智游戏手柄即送手柄支架",
+		"price":"116"
 	}
 ]

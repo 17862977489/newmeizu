@@ -409,6 +409,9 @@ body{
     position: relative;
     background: #fff;
 }
+.gl-item.mr0{
+	margin-right: 0;
+}
 .gl-item .gl-item-wrap {
     position: relative;
     text-align: center;
@@ -479,9 +482,7 @@ body{
     margin-top: 15px;
     text-align: center;
 }
-.ui-paginate .p-prev.disabled {
-    color: #efefef;
-}
+
 .ui-paginate .disabled {
     cursor: default;
 }
@@ -501,10 +502,6 @@ body{
     vertical-align: middle;
     text-align: center;
 }
-.ui-paginate .current {
-    color: #00c3f5;
-    cursor: default;
-}
 .ui-paginate .p-elem {
     display: inline-block;
     font-size: 14px;
@@ -514,6 +511,14 @@ body{
     line-height: 20px;
     padding: 5px 5px;
 }
-.ui-paginate a, .ui-paginate a.p-item {
+.ui-paginate .p-item {
     color: #333;
+    cursor: pointer;
+}
+.ui-paginate .current {
+    color: #00c3f5;
+    cursor: default;
+}
+.ui-paginate .p-prev.disabled ,.ui-paginate .p-next.disabled{
+    color: #efefef;
 }
