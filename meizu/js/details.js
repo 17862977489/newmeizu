@@ -1,3 +1,4 @@
+//详情页
 window.onload=function(){
 	$("#bottom").load("bottom.html",function(){
 		acolor();
@@ -119,6 +120,7 @@ function shopcookie(){
 		console.log(arr);
 		setCookie( "shopCar", JSON.stringify(arr) );
 }
+//请求数据
 function json(obj){
 	$.ajax({
 		type:"get",
@@ -165,7 +167,7 @@ function change(){
 //滚动条事件
 function show(){
 	$(window).scroll(function(){
-		if($(document).scrollTop()>=250){
+		if($(document).scrollTop()>=250){//大于250时吸顶
 			$("#xd").stop().animate({"height":"80px"},100,function(){
 				$(".mod_total").css("display","block");
 				$(".xd_con").css("display","block");
@@ -196,12 +198,12 @@ function show(){
 				$(".mod_total").css("display","none");
 			});
 		}
-		if($(document).scrollTop()>=500){
+		if($(document).scrollTop()>=500){//大于500时返回顶部按钮出现
 			$("#backtop").stop().animate({"opacity":1},300);
 		}else{
 			$("#backtop").stop().animate({"opacity":0},300);
 		}
-		if($(document).scrollTop()>=800){
+		if($(document).scrollTop()>=800){//大于800时购买按钮出现
 			$("#ayd").css({"margin-right": "0"});
 		}else{
 			$("#ayd").css({"margin-right": "-120px"});
@@ -217,6 +219,7 @@ function show(){
 }
 //手机信息切换
 function djsj(){
+	//获取颜色
 	for(let i=0;i<$(".ysfl").find("a").length;i++){
 		$(".vm_sale_img").eq(i).click(function(){
 			$(this).addClass("selected").siblings().removeClass("selected");
@@ -224,6 +227,7 @@ function djsj(){
 			json($(this).attr("fl"));//换颜色
 		})
 	}
+	//获取内存容量
 	for(let i=0;i<$(".ncrl").find("a").length;i++){
 		$(".ncrl").find("a").eq(i).click(function(){
 			$(this).addClass("selected").siblings().removeClass("selected");
@@ -236,6 +240,7 @@ function djsj(){
 			$(".tc").find("a").eq(0).addClass("selected").siblings().removeClass("selected");
 		})
 	}
+	//获取套餐
 	for(let i=0;i<$(".tc").find("a").length;i++){
 		$(".tc").find("a").eq(i).click(function(){
 			$(this).addClass("selected").siblings().removeClass("selected");

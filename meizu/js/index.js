@@ -40,7 +40,7 @@ for(let i=0;i<sp.length;i++){
 		timer = setInterval(autoPlay, 6000);
 	}
 }
-
+//请求产品数据
 $.ajax({
 	type:"get",
 	url:"else.json",
@@ -109,7 +109,7 @@ $.ajax({
 		$(".bbs_con").append(str2);
    }
 })
-
+//请求phone数据
 $.ajax({
 	type:"get",
 	url:"phone.json",
@@ -188,6 +188,7 @@ $.ajax({
 })
 
 window.onload=function(){
+	//如果cookie中有购物车的数据 
 	if(document.cookie.indexOf("gwc=")!=-1){
 		$("#shopcar").find("em").html(getCookie("gwc").total);
 	}
@@ -202,7 +203,9 @@ window.onload=function(){
 	acolor();
 	user();
 }
+//顶部出现下拉效果
 function ul1(){
+	//魅族手机
 	$(".mzsj").find(".blu").mouseenter(function(){
 		$(this).css("color","#31a5e7");
 		$("#logo").find("i").css("color","#31a5e7");
@@ -223,6 +226,7 @@ function ul1(){
 		$(".morepro1").find(".ul1").css("display","none");
 		$(".icon-gouwuche").css("color","#fff");
 	})
+	//魅蓝手机
 	$(".mlsj").find(".blu").mouseenter(function(){
 		$(this).css("color","#31a5e7");
 		$("#logo").find("i").css("color","#31a5e7");
@@ -243,6 +247,7 @@ function ul1(){
 		$(".morepro2").find(".ul2").css("display","none");
 		$(".icon-gouwuche").css("color","#fff");
 	})
+	//智能配件
 	$(".znpj").find(".blu").mouseenter(function(){
 		$(this).css("color","#31a5e7");
 		$("#logo").find("i").css("color","#31a5e7");
@@ -313,7 +318,7 @@ function btn(){
 		move(index);
 	})
 }
-
+//手机移动效果
 function move(index){
 	$(".find_top_con").animate({"left":-1242*index},300);
 	$(".find_phone_con_bottom").find("span").eq(index).addClass("show").siblings().removeClass("show");

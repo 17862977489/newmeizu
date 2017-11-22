@@ -1,6 +1,7 @@
 window.onload=function(){
 	var flag=true;
 	tzcs();
+	//吸顶
 	$(".zw").find("li").eq(0).click(function(){
 		$("html,body").animate({"scrollTop":"80"},1000);
 		$(".cs").css("display","none");
@@ -23,6 +24,7 @@ window.onload=function(){
 		$(".zw").css({"border-bottom":"1px solid #efefef"});
 		flag=false;
 	})
+	//参数背景
 	$(".tzcsbg").click(function(){
 		flag=false;
 		$("html,body").animate({"scrollTop":"80"},1000,function(){
@@ -54,8 +56,7 @@ window.onload=function(){
 		acolor();
 	})
 	navC();
-	ul1();
-	
+	ul1();	
 	qhys();
 	user();
 }

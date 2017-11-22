@@ -1,3 +1,4 @@
+//商城页
 window.onload=function(){
 	$("#bottom").load("bottom.html",function(){
 		acolor();
@@ -12,6 +13,7 @@ window.onload=function(){
 	})
 	
 }
+//请求数据
 $.ajax({
 	type:"get",
 	url:"sc.json",
@@ -47,7 +49,8 @@ $.ajax({
 					index=$(".p-item").eq(i).html();	
 				}
 			}
-		})		
+		})
+		//点击前一页
 		$(".ui-paginate").delegate(".p-prev","click",function(){
 			index--;
 			if(index<=1){
@@ -56,6 +59,7 @@ $.ajax({
 			$(".p-item").eq(index-1).addClass("current").siblings().removeClass("current")
 			show(res,index);
 		})
+		//点击后一页
 		$(".ui-paginate").delegate(".p-next","click",function(){
 			index++;
 			if(index>=page){
@@ -66,6 +70,8 @@ $.ajax({
 		})
 	}
 })
+
+//显示数据
 function show(res,index){
 	var str="";
 	for (var i=(index-1)*4 ; i < index*4; i++) {

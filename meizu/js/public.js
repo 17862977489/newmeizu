@@ -102,6 +102,7 @@ function acolor(){
 	$("#bottom_bottomR").find("li").eq(2).mouseleave(function(){
 		$(this).find("i").css("color","#999");
 	})
+	//最底部的效果
 	$(".zj").mouseenter(function(){	
 		$(this).find("img").attr("src","images/zj.png");
 		$(this).find("img").css({"margin-left":"4px","margin-right":"-1px"});

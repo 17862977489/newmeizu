@@ -1,4 +1,5 @@
 window.onload=function(){
+	//要是cookie中有记住密码
 	if(getCookie("userInfo1").jzname){
 		$("#account").val(getCookie("userInfo1").jzname)
 		$("#password").val(getCookie("userInfo1").jzpwd);
@@ -15,6 +16,7 @@ window.onload=function(){
 	var flag=true;
 	var flag1=true;
 	way();
+	//二维码
 	function way(){
 		$(".way").click(function(){
 			if(flag){
@@ -42,6 +44,7 @@ window.onload=function(){
 }
 //表单事件
 function formsj(){
+	//按钮
 	$("#btn").mouseenter(function(){
 		$(this).css("background","#2b8cc5");
 	})
@@ -54,6 +57,7 @@ function formsj(){
 	$(".linkblue").mouseleave(function(){
 		$(this).css("color","#00a7ea");
 	})
+	//验证码
 	$(".yz").mouseenter(function(){
 		$(this).addClass("active");
 	})
@@ -83,12 +87,14 @@ function yz(){
 }
 //微博微信空间
 function wwk(){
+	//微博
 	$(".footer_sinaMblog").mouseenter(function(){
 		$(this).css({"color":"#fb5353","border-color":"#fb5353"});
 	})
 	$(".footer_sinaMblog").mouseleave(function(){
 		$(this).css({"color":"#A8A8A8","border-color":"#c9c9c9"});
 	})
+	//微信
 	$(".footer_weChat").mouseenter(function(){
 		$(this).css({"color":"#29cc29","border-color":"#29cc29"});
 		$(".wx").css("display","block");
@@ -97,6 +103,7 @@ function wwk(){
 		$(this).css({"color":"#a8a8a8","border-color":"#c9c9c9"});
 		$(".wx").css("display","none");
 	})
+	//空间
 	$(".footer_qzone").mouseenter(function(){
 		$(this).css({"color":"#ffc100","border-color":"#ffc100"});
 	})
@@ -121,6 +128,7 @@ function yqlink(){
 }
 //登陆切换
 function dlqh(){
+	//验证码登陆
 	$(".yzmdl").click(function(){
 		$("#yzmdl").css("display","block");
 		$("#zhdl").css("display","none");
@@ -142,6 +150,7 @@ function dlqh(){
 			$(".normalInput").css("border-color","#DADADA");
 		})
 	})
+	//账号登陆
 	$(".zhdl").click(function(){
 		$("#zhdl").css("display","block");
 		$("#yzmdl").css("display","none");
@@ -171,6 +180,7 @@ function dl(){
 			}
 			document.cookie = "userInfo1="+JSON.stringify(json);
 		}
+		//判断是否验证了
 		if($(".tip_content").html()=="验证成功"){
 			var json = {
 				"uname": getCookie("userInfo").uname ,

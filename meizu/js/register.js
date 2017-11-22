@@ -7,19 +7,23 @@ window.onload=function(){
 	btndj();
 	inputdj();	
 }
+//表单事件
 function formsj(){
+	//标题
 	$(".title").find("a").mouseenter(function(){
 		$(this).css("color","#008ed1");
 	})
 	$(".title").find("a").mouseleave(function(){
 		$(this).css("color","#00a7ea");
 	})
+	//手机号
 	$("#phone").focus(function(){
 		$(".sjh").css("border","1px solid #32a5e7");
 	})
 	$("#phone").blur(function(){
 		$(".sjh").css("border","1px solid #dadada");
 	})
+	//按钮
 	$("#btn").mouseenter(function(){
 		$(this).css("background","#2b8cc5");
 	})
@@ -32,12 +36,14 @@ function formsj(){
 	$(".linkblue").mouseleave(function(){
 		$(this).css("color","#00a7ea");
 	})
+	//验证码
 	$(".yz").mouseenter(function(){
 		$(this).addClass("active");
 	})
 	$(".yz").mouseleave(function(){
 		$(this).removeClass("active");
 	})
+	//语言
 	$(".language").mouseenter(function(){
 		$(".yuyan").css("display","block");
 	})
@@ -45,6 +51,7 @@ function formsj(){
 		$(".yuyan").css("display","none");
 	})
 }
+//链接灰色移入效果
 function linkgrey(){
 	$(".linkAGray").mouseenter(function(){
 		$(this).css("color","#2b2b2b");
@@ -53,13 +60,16 @@ function linkgrey(){
 		$(this).css("color","#7f7f7f");
 	})
 }
+//微博微信空间
 function wwk(){
+	//微博
 	$(".footer_sinaMblog").mouseenter(function(){
 		$(this).css({"color":"#fb5353","border-color":"#fb5353"});
 	})
 	$(".footer_sinaMblog").mouseleave(function(){
 		$(this).css({"color":"#A8A8A8","border-color":"#c9c9c9"});
 	})
+	//微信
 	$(".footer_weChat").mouseenter(function(){
 		$(this).css({"color":"#29cc29","border-color":"#29cc29"});
 		$(".wx").css("display","block");
@@ -68,6 +78,7 @@ function wwk(){
 		$(this).css({"color":"#a8a8a8","border-color":"#c9c9c9"});
 		$(".wx").css("display","none");
 	})
+	//空间
 	$(".footer_qzone").mouseenter(function(){
 		$(this).css({"color":"#ffc100","border-color":"#ffc100"});
 	})
@@ -75,6 +86,7 @@ function wwk(){
 		$(this).css({"color":"#A8A8A8","border-color":"#c9c9c9"});
 	})
 }
+//链接点击效果
 function yqlink(){
 	$(".link").find("a").click(function(){
 		$(this).css("color","#515151");
@@ -83,6 +95,7 @@ function yqlink(){
 		$(this).css("color","#000");
 	})
 }
+//验证码
 function yz(){
 	$(".yz").click(function(){
 		$(".circle").css("display","none");
@@ -93,16 +106,18 @@ function yz(){
 		$(".geetest_logo").css("background-position-y","-212px");
 	})
 }
+//点击手机号框效果
 function inputdj(){
-	$(".phone").click(function(){
+	$("#phone").click(function(){
 		$(".sjh").css("border-color","#32a5e7");
 	})
 }
+//点击按钮
 function btndj(){
 	var flag=true;
 	var pwdflag=null;
 	$("#btn").click(function(){
-		var reg=/^1[3578]\d{9}$/;
+		var reg=/^1[3578]\d{9}$/;//手机号正则
 		var yzcg=$(".tip_content").html();
 		var sjh=$("#phone").val();
 		if(yzcg=="验证成功"&&reg.test(sjh)&&flag){
@@ -127,6 +142,7 @@ function btndj(){
 			})
 			
 		}
+		//点击按钮进入下一步
 		if($("#btn").val()=="下一步"){
 			if($("#kapkey").val()==$("#getKey").html()){
 				$("#btn").val("提交");
@@ -141,8 +157,9 @@ function btndj(){
 				})
 			}
 		}
+		//点击按钮进入下一步
 		if($("#btn").val()=="提交"){
-			var mima=/(?!^[0-9]+$)(?!^[A-z]+$)(?!^[^A-z0-9]+$)^.{8,16}$/;
+			var mima=/(?!^[0-9]+$)(?!^[A-z]+$)(?!^[^A-z0-9]+$)^.{8,16}$/;//密码正则
 			if(mima.test($("#pwd").val())){
 				var json = {
 					"uname": $("#phone").val() ,

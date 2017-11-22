@@ -1,4 +1,5 @@
 window.onload=function(){
+	//如果cookie中有用户信息则显示
 	if(getCookie("userInfo").uname&&getCookie("userInfo").ztz!=1){
 		$(".dl").css("display","none");
 		$(".zc").css("display","none");
@@ -8,27 +9,30 @@ window.onload=function(){
 		$("#wdl").css("display","none");
 	}
 	$("#bottom").load("bottom.html",function(){
-		acolor();
+		acolor();//底部效果
 	})
 	user();
-	//未登录且购物车为空时提示用户登录
+	//购物车不为空时显示
 	if(document.cookie.indexOf("shopCar=")!=-1){
 		$(".shopcar_con").css("display","block");
 		$(".cal").css("display","block");
 		$(".cart-empty").css("display","none");
 		tjsp();
 	}else if(document.cookie.indexOf("shopCar=")==-1&&getCookie("shopCar").length==0&&(document.cookie.indexOf("userInfo=")!=-1)&&getCookie("userInfo").ztz!=1){
+		//登录但购物车为空时显示
 		$(".login").css("display","table");
 		$(".unlogin").css("display","none");
 		$(".shopcar_con").css("display","none");
 		$(".cal").css("display","none");
 	}else if(document.cookie.indexOf("shopCar=")==-1&&getCookie("shopCar").length==0&&(document.cookie.indexOf("userInfo=")==-1||getCookie("userInfo").ztz==1)){
+		//未登录且购物车为空时提示用户登录
 		$(".unlogin").css("display","table");
 		$(".login").css("display","none");
 		$(".shopcar_con").css("display","none");
 		$(".cal").css("display","none");
 	}
 	del();
+	//删除后判断购物车是否为空
 	if(getCookie("shopCar").length==0&&(document.cookie.indexOf("userInfo=")==-1||getCookie("userInfo").ztz==1)){
 		$(".unlogin").css("display","table");
 		$(".login").css("display","none");
